@@ -1,15 +1,10 @@
 Port::Application.routes.draw do
-  get "posts/new"
-
-  get "posts/show"
-
   root :to => 'static_pages#home'
 
   match 'home' => 'static_pages#home'
   match 'about' => 'static_pages#about'
   match 'contact' => 'static_pages#contact'
 
-  resources :posts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
