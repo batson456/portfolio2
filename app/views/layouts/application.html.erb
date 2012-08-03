@@ -10,14 +10,16 @@
 
 <div class="container">
 	<div class="row navbar">
-		<div class="logo span4">
+		<div class="logo span3">
 			<a href="#">Bryce Batson</a>
 			<br>
 			<span>Web Development Connoisseur</span>
 		</div>
-		<div class="span8">
+		<div class="span9">
 			<ul class="navigation pull-right">
 				<%= nav_link 'Home', root_path %>
+				<%= nav_link 'Portfolio', '#' %>
+				<%= nav_link 'Blog', '#' %>
 				<%= nav_link 'About', about_path %>
 				<%= nav_link 'Contact', contact_path %>
 			</ul>
@@ -28,6 +30,10 @@
 <div class="content container">
 	<%= yield %>
 </div>
+
+<p id="back-top">
+	<a href="#top" id="top"><span></span></a>
+</p>
 
 <div id="footer">
 	<div class="container">

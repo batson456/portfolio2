@@ -65,6 +65,40 @@ h5{
 	color:white;
 }
 
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	right:0px;
+	margin-right: 10px;
+}
+
+#back-top a {
+	width: 51px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 51px;
+	height: 51px;
+	display: block;
+	margin-bottom: 7px;
+	background: url(up-arrow.png) no-repeat top left;
+
+}
+#back-top a:hover span {
+	background-position:0 -51px;
+}
+
 /***********************************************
 * Shadows
 ***********************************************/
