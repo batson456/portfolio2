@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require jquery.easing
 //= require bootstrap
+//= require jquery.adipoli.min
 //= require scripts
 //= require_tree .

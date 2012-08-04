@@ -25,6 +25,13 @@ $(document).ready(function(){
             return false;
         });
     });
+
+    $(function(){
+        $('.hover_image').adipoli({
+            'startEffect' : 'transparent',
+            'hoverEffect' : 'popout',
+        });
+    });
 });
 
 // Twitter feed javascript

@@ -1,3 +1,4 @@
+
 /***********************************************
 * Colors
 ***********************************************/ 
@@ -149,6 +150,10 @@ h5{
 #blog{
 	margin-bottom:60px;
 }
+#latest_projects{
+	margin-bottom:60px;
+}
+
 /***********************************************
 * Navigation Bar
 ***********************************************/ 
@@ -189,23 +194,19 @@ h5{
 			color:$gray;
 		}
 	}
-	li:first-child,li:hover:first-child{
-		padding-left:-1px;
-		border-left:none;
-	}
 	li a{
 		display:block;
 	}
 	.active,li:hover{
-		margin-left:-1px;
+		margin-left:-2px;
 		background:$orange;
 		display:block;
 		height:100px;
 		width:125px;
 		box-shadow:0 10px 5px rgba(0, 0, 0, .1);
-		margin-top:-5px;
 		border-bottom:1px solid $orange;
-		border-left:1px dashed $grayLight;
+		border-left:1px solid $grayLight;
+		border-right:1px solid $grayLight;
 		a{
 			color:white;
 		}
@@ -221,6 +222,7 @@ h5{
 	background:#3A3A3A;
 	color:$grayLight;
 	padding:35px 0 30px;
+	margin-top:30px;
 	h3{
 		color:inherit;
 		margin-bottom:20px;
@@ -377,6 +379,62 @@ img.bg{
 /***********************************************
 * Contact Page
 ***********************************************/ 
-#map{
+#contact_info{
 	margin-top:40px;
+	p{
+		line-height:1em;
+	}
+}
+#contact_form{
+	form{
+		background:$grayLighter;
+		padding:30px;
+		input[type=text]{
+			width:80%;
+		}
+		textarea{
+			width:100%;
+			height:150px;
+		}
+	}
+}
+
+/***********************************************
+* Adipoli CSS
+***********************************************/ 
+
+.adipoli-wrapper
+{
+	text-align:center;
+	vertical-align:baseline;
+    margin:auto;
+    position:relative;
+    display: inline-block;
+}
+.adipoli-wrapper>img
+{
+    position: absolute;
+    z-index: 1;
+}
+.adipoli-before
+{
+    position: absolute;
+    z-index: 5;
+}
+.adipoli-after
+{
+    position: absolute;
+    z-index: 10;
+}
+.adipoli-slice {
+    display:block;
+    position:absolute;
+    z-index:15;
+    height:100%;
+}
+.adipoli-box
+{
+    display:block;
+    position:absolute;
+    z-index:15;
 }
