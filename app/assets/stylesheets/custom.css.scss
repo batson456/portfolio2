@@ -189,7 +189,7 @@ h5{
 			color:$gray;
 		}
 	}
-	li:first-child{
+	li:first-child,li:hover:first-child{
 		padding-left:-1px;
 		border-left:none;
 	}
