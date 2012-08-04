@@ -29,7 +29,7 @@ $(document).ready(function(){
     $(function(){
         $('.hover_image').adipoli({
             'startEffect' : 'transparent',
-            'hoverEffect' : 'popout',
+            'hoverEffect' : 'normal',
         });
     });
 });
