@@ -9,6 +9,8 @@ $orange:#F15A23;
 .orange{ color:$orange; }
 
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Merienda+One);
+@import url(http://fonts.googleapis.com/css?family=Dr+Sugiyama);
 
 
 /***********************************************
@@ -19,6 +21,7 @@ body{
 	border-top:5px solid $gray;
 	color:$grayLight;
 	font:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
 }
 .content{
 	min-height:600px;
@@ -156,14 +159,18 @@ h5{
 	margin-bottom:40px;
 }
 .logo{
+	
+	height:100px;
 	padding-top:20px;
 	a{
+		font-family: 'Dr Sugiyama', cursive;
 		color:$gray;
-		font-size:30px;
+		font-size:45px;
 		line-height:50px;
 	}
-	span{
-		font-size:14px;
+	.subtext{
+		font-family: 'Merienda One', cursive;
+		font-size:12px;
 	}
 }
 .navigation{
@@ -302,7 +309,7 @@ h5{
     line-height:26px;
 }
 a.more{
-    color:orange;
+    color:$orange;
     text-decoration:none;
     font-weight:600;
     text-transform:uppercase;
@@ -364,4 +371,11 @@ img.bg{
     -moz-box-shadow:0px 0px 10px #222;
     -webkit-box-shadow:0px 0px 10px #222;
     box-shadow:0px 0px 10px #222;
+}
+
+/***********************************************
+* Contact Page
+***********************************************/ 
+#map{
+	margin-top:40px;
 }
