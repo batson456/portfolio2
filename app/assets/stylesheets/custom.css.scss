@@ -290,7 +290,9 @@ h5{
 /***********************************************
 * Jquery Slider
 ***********************************************/ 
-
+#slider{
+	margin-bottom:60px;
+}
 .rotator .heading{
     position:absolute;
     top:0px;
@@ -368,9 +370,9 @@ img.bg{
     left:0px;
 }
 .rotator{
-    background-color:#222;
+    background-color:$grayLight;
     margin:0 auto;
-    height:300px;
+    height:400px;
     position:relative;
     font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
     color:#fff;
