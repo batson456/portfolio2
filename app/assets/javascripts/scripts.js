@@ -57,7 +57,10 @@ $(document).ready(function(){
                 }, "slow");
             });
         });
-            
+    // Create the slider effect for testimonials
+    $(function(){
+        $('.slider').mb_vSlider();
+    });
 }); // End document.ready
 
 // Twitter feed javascript

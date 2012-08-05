@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require jquery.easing
 //= require bootstrap
-//= require jquery.adipoli.min
+//= require mbVerticalSlider
 //= require scripts
 //= require_tree .
