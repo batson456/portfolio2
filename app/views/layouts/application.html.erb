@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Bryce Batson | Portfolio</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -8,20 +9,22 @@
 </head>
 <body>
 <a name="top"></a>
-<div class="container">
-	<div class="row navbar">
-		<div class="logo span3">
-			<a href="#"><span class="orange">Bryce</span>Batson</a>
-			<br>
-			<span class="subtext">Web Development Connoisseur</span>
-		</div>
-		<div class="span9">
-			<ul class="navigation pull-right">
-				<%= nav_link 'Home', root_path %>
-				<%= nav_link 'Portfolio', '#' %>
-				<%= nav_link 'About', about_path %>
-				<%= nav_link 'Contact', contact_path %>
-			</ul>
+<div id="navbar">
+	<div class="container">
+		<div class="row">
+			<div id="logo" class="span3">
+				<a href="#"><span class="orange">Bryce</span>Batson</a>
+				<br>
+				<span class="subtext">Web Development Connoisseur</span>
+			</div>
+			<div class="span9">
+				<ul class="navigation pull-right">
+					<%= nav_link 'Home', root_path %>
+					<%= nav_link 'Portfolio', '#' %>
+					<%= nav_link 'About', about_path %>
+					<%= nav_link 'Contact', contact_path %>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
