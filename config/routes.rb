@@ -1,4 +1,8 @@
 Port::Application.routes.draw do
+  get "contact/new"
+
+  get "contact/send"
+
   root :to => 'static_pages#home'
 
   match 'about' => 'static_pages#about'
