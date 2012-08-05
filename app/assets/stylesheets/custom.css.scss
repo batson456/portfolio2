@@ -13,6 +13,10 @@ $orange:#F15A23;
 @import url(http://fonts.googleapis.com/css?family=Merienda+One);
 @import url(http://fonts.googleapis.com/css?family=Dr+Sugiyama);
 
+.bar{ 
+	text-align:left;
+}
+
 
 /***********************************************
 * Defaults
@@ -281,6 +285,12 @@ h5{
 	a{
 		padding-left:10px;
 		padding-right:10px;
+	}
+	ul{
+		list-style:none;
+	}
+	li{
+		float:left;
 	}
 }
 .me_image{
