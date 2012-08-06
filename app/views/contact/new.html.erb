@@ -1,2 +1,16 @@
-<h1>Contact#new</h1>
-<p>Find me in app/views/contact/new.html.erb</p>
+<%= form_for @message, :url => message_path do |form|
+ %>
+	<%= form.label :email %>
+	<%= form.text_field :email %>
+
+	<%= form.label :name %>
+	<%= form.text_field :name %>
+
+	<%= form.label :subject %>
+	<%= form.text_field :subject %>
+
+	<%= form.label :message %>
+	<%= form.text_area :message %>
+	<br>
+	<%= form.submit "Send", :class => 'button-small' %>
+<% end %>

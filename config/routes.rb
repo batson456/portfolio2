@@ -1,13 +1,11 @@
 Port::Application.routes.draw do
-  get "contact/new"
-
-  get "contact/send"
-
   root :to => 'static_pages#home'
+
 
   match 'about' => 'static_pages#about'
   match 'contact' => 'static_pages#contact'
-
+  match 'message' => 'contact#new', :via => :get
+  match 'message' => 'contact#create', :via=> :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

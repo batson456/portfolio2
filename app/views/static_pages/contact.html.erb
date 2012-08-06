@@ -25,18 +25,7 @@
 
 	<div id="contact_form" class="span6">
 		<h5>Get in touch!</h5>	
-		<%= form_tag do %>
-			<label for="email">Email:</label>
-			<input type="text" name="email">
-			<label for="name">Name:</label>
-			<input type="text" name="name">
-			<label for="subject">Subject:</label>
-			<input type="text" name="subject">
-			<label for="body">Body:</label>
-			<textarea name="body"></textarea>	
-			<br>
-			<input type="submit" class="button-small center">
-		<% end %>
+		<%= render :template => 'contact/new' %>
 	</div>
 </div>
 

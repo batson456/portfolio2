@@ -26,14 +26,6 @@ $(document).ready(function(){
         });
     });
 
-    //create the hover effect for adipoli
-    $(function(){
-        $('.hover_image').adipoli({
-            'startEffect' : 'transparent',
-            'hoverEffect' : 'normal',
-        });
-    });
-
     // Create the gallery rollover effect
         $(function() {
             // OPACITY OF BUTTON SET TO 0%

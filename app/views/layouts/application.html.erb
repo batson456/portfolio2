@@ -8,6 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <a name="top"></a>
 <div id="navbar">
 	<div class="container">
@@ -29,6 +30,9 @@
 	</div>
 </div>
 
+<% if flash[:success] %>
+	<div class="alert alert-success"><%= flash[:success] %></div>
+<% end %>
 <div class="content container">
 	<%= yield %>
 </div>
@@ -42,18 +46,7 @@
 		<div class="row">
 			<div class="span4">
 				<h3>Contact</h3>
-				<%= form_tag do %>
-					<label for="email">Email:</label>
-					<input type="text" name="email">
-					<label for="name">Name:</label>
-					<input type="text" name="name">
-					<label for="subject">Subject:</label>
-					<input type="text" name="subject">
-					<label for="body">Body:</label>
-					<textarea name="body"></textarea>	
-					<br>
-					<input type="submit" class="btn">
-				<% end %>
+				<%= render :template => 'contact/new' %>
 			</div><!-- / Contact-form -->
 
 			<div class="span4">
