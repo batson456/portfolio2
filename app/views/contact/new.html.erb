@@ -1,16 +1,12 @@
-<%= form_for @message, :url => message_path do |form|
+<%= form_for @message, :url => message_path, :validate => true do |form|
  %>
-	<%= form.label :email %>
-	<%= form.text_field :email %>
+	<%= form.text_field :email, :placeholder => 'Email Address' %>
 
-	<%= form.label :name %>
-	<%= form.text_field :name %>
+	<%= form.text_field :name, :placeholder => 'Name (first and last)' %>
 
-	<%= form.label :subject %>
-	<%= form.text_field :subject %>
+	<%= form.text_field :subject, :placeholder => 'Subject' %>
 
-	<%= form.label :message %>
-	<%= form.text_area :message %>
+	<%= form.text_area :message, :placeholder => 'Please enter a message' %>
 	<br>
 	<%= form.submit "Send", :class => 'button-small' %>
 <% end %>
