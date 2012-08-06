@@ -1,27 +1,42 @@
 <div class="row">
-	<div class="span8">
-		<h4>Who am I?</h4>
+	<div id="who_am_i" class="span8">
+		<h4>Meet the man behind the scene</h4>
+		<%= image_tag 'me.png', :class=>'pull-left me_image' %>
+		<p>
+			<span class="dropcap">M</span> y name is Bryce Batson. I was born in 1985 in Algonquin, IL. Since then I have lived in 5 different states: Michigan, Wisconsin, Illinois again, Michigan again, Vermont, and finally New York. I now live with my loving wife and two kids, Ethan and Addison. I graduated with a music business degree from Lyndon State College in 2011, but my true passion is and always has been computers.
+		</p>
+		<p>	
+			I have been obsessed with computers my entire life. I built my first computer at 12 and my first website at 14. I decided to drop my passion for computers in search of a more reliable means of income and pursued architecture and business, but the whole time I could feel the pull of the web luring me back in. I finally gave in in 2010, and began developing websites again. 
+		</p>
+		<p>
+			I most recently started developing applications using <a href="http://rubyonrails.org/">Ruby on Rails</a> which I am absolutely in love with, but still in the process of learning. I have mostly worked with <a href="http://www.php/net">PHP</a>, which is a very powerful but slightly cluttered language in my opinion. I have worked with multiple database tools and am proficient in SQL. 
+		</p>
+		<p>
+			Although I know HTML, CSS, and Javascript/jQuery (design stuff), I do not have the same eye for detail that most designers do. I can make a solid UI and design, but my real proficiencies lie in the backend programming aspect of web development. 
+		</p>
+		<hr>
+		<h5>I hope to work with you soon, make sure to leave me a <%= link_to 'message', contact_path %> and let me know what you think about my work!</h5>
 	</div>
 	<div class="span4">
 		<h4>My Skills</h4>
-		<div class="progress">
+		<div class="progress progress-danger">
 			<div class="bar" style="width:100%">
 				<p>HTML</p>
 			</div>
 		</div>
-		<div class="progress">
+		<div class="progress progress-danger">
 			<div class="bar" style="width:80%">
 				<p>CSS</p>
 			</div>
 		</div>
-		<div class="progress">
+		<div class="progress progress-danger">
 			<div class="bar" style="width:80%"><p>PHP</p></div>
 		</div>
-		<div class="progress">
+		<div class="progress progress-danger">
 			<div class="bar" style="width:60%">MySQL</div>
 		</div>
-		<div class="progress">
-			<div class="bar" style="width:40%">Ruby</div>
+		<div class="progress progress-danger">
+			<div class="bar" style="width:40%">Ruby --></div>
 		</div>
 	</div>
 </div>	

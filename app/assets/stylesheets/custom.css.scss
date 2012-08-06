@@ -170,6 +170,26 @@ h5{
 	font-size:10px;
 	
 }
+#who_am_i{
+	p{
+		line-height:1.9em;
+	}
+	line-height:2.5em;
+}
+.dropcap{
+	float:left;
+	color:$orange;
+	font-size:30px;;
+	line-height: 25px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: Georgia;
+}
+.alert{
+	text-align:center;
+}
+
 
 /***********************************************
 * Navigation Bar
@@ -253,11 +273,7 @@ h5{
 	textarea{
 		height:60px;
 	}
-	.who_am_i:first-letter{
-		font-size:200%;
-		font-weight:bold;
-		float:left;
-	}
+
 	p{
 		line-height:1.8em;
 	}
