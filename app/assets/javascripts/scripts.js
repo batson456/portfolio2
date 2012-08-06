@@ -49,10 +49,6 @@ $(document).ready(function(){
                 }, "slow");
             });
         });
-    // Create the slider effect for testimonials
-    $(function(){
-        $('.slider').tinycarousel({ axis : 'y' });
-    });
 }); // End document.ready
 
 // Twitter feed javascript
