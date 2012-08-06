@@ -51,7 +51,7 @@ $(document).ready(function(){
         });
     // Create the slider effect for testimonials
     $(function(){
-        $('.slider').mb_vSlider();
+        $('.slider').tinycarousel({ axis : 'y' });
     });
 }); // End document.ready
 
