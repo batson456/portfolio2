@@ -16,4 +16,5 @@
 //= require bootstrap
 //= require mbVerticalSlider
 //= require scripts
+//= require rails.validations
 //= require_tree .

@@ -6,6 +6,7 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'bootstrap-sass'
+gem 'client_side_validations'
 
 group :development, :test do
 	gem 'rspec-rails'
