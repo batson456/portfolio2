@@ -270,9 +270,6 @@ h5{
 		color:inherit;
 		margin-bottom:20px;
 	}
-	label{
-		color:inherit;
-	}
 	textarea{
 		height:60px;
 	}
@@ -470,10 +467,3 @@ field_with_errors{
 	color:red;
 }
 
-.slider { height: 125px;  }
-.slider .viewport { float: left; width: 240px; height: 125px; overflow: hidden; position: relative; }
-.slider .buttons { display: block; margin: 30px 10px 0 0; float: left; }
-.slider .next { margin: 30px 0 0 10px;  }
-.slider .disable { visibility: hidden; }
-.slider .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
-.slider .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 125px; width: 236px;}
