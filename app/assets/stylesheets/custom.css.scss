@@ -13,10 +13,6 @@ $orange:#F15A23;
 @import url(http://fonts.googleapis.com/css?family=Merienda+One);
 @import url(http://fonts.googleapis.com/css?family=Dr+Sugiyama);
 
-.bar{ 
-	text-align:left;
-}
-
 
 /***********************************************
 * Defaults
@@ -71,14 +67,12 @@ h5{
 }
 .button-small:hover{
 	background:#f48359;
-	color:white;
 }
 
 #back-top {
 	position: fixed;
 	bottom: 30px;
-	right:0px;
-	margin-right: 10px;
+	right:10px;
 }
 
 #back-top a {
@@ -100,7 +94,6 @@ h5{
 	width: 51px;
 	height: 51px;
 	display: block;
-	margin-bottom: 7px;
 	background: url(up-arrow.png) no-repeat top left;
 
 }
@@ -152,19 +145,6 @@ h5{
 	color:$orange;
 	line-height:2em;
 }
-#blog{
-	margin-bottom:60px;
-}
-#latest_projects{
-	margin-bottom:60px;
-	margin-top:60px;
-	img{
-		position:relative;
-		border: 1px solid #bbb;
-		background: #fff;
-		padding: 4px;
-	}
-}
 .client{
 	font-style:italic;
 	font-size:10px;
@@ -174,7 +154,6 @@ h5{
 	p{
 		line-height:1.9em;
 	}
-	line-height:2.5em;
 }
 .dropcap{
 	float:left;
@@ -189,10 +168,6 @@ h5{
 .alert{
 	text-align:center;
 }
-.slider{
-	height:200px;
-}
-
 
 /***********************************************
 * Navigation Bar
