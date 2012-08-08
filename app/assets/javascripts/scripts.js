@@ -29,7 +29,7 @@ $(document).ready(function(){
     // Create the gallery rollover effect
     $(function () {
         $('.image').adipoli({
-            'startEffect' : 'normal',
+            'startEffect' : 'grayscale',
             'hoverEffect' : 'popout'
         });
     });
