@@ -17,8 +17,8 @@
 				<br>
 				<span class="subtext">Web Development Connoisseur</span>
 			</div>
-			<div class="span9">
-				<ul class="navigation pull-right hidden-phone">
+			<div class="span9 hidden-phone">
+				<ul class="navigation pull-right">
 					<%= nav_link 'Home', root_path %>
 					<%= nav_link 'Portfolio', '#' %>
 					<%= nav_link 'About', about_path %>
@@ -28,6 +28,12 @@
 		</div>
 	</div>
 </div>
+
+<select name="menu" id="menu" class="visible-phone">
+	<option value="home">Home</option>
+	<option value="about">About</option>
+	<option value="contact">Contact</option>
+</select>
 
 <% if flash[:success] %>
 	<div class="alert alert-success"><%= flash[:success] %></div>
@@ -47,8 +53,9 @@
 				<h3>Contact</h3>
 				<%= render :template => 'contact/new' %>
 			</div><!-- / Contact-form -->
+			<hr class="visible-phone">
 
-			<div class="span4">
+			<div class="span4 hidden-phone">
 				<h3>Twitter</h3>
 				<div id="feed"></div>
 				<script>
