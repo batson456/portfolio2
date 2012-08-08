@@ -16,4 +16,5 @@
 //= require bootstrap
 //= require scripts
 //= require rails.validations
+//= require jquery.adipoli.min
 //= require_tree .

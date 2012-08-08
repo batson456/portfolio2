@@ -482,20 +482,8 @@ img.bg{
 }
 
 /***********************************************
-* Hover Effect
+* Error Messages in contact form
 ***********************************************/ 
-
-span.roll {
-	background:url(hover.png) center center no-repeat #000;
-	background-color:#fff;
-	height:45.5%;
-	position: absolute;
-	width: 25.48%;
-	z-index: 999;	
-	-webkit-box-shadow: 0px 0px 4px #000;
-	-moz-box-shadow: 0px 0px 4px  #000;
-	box-shadow: 0px 0px 4px  #000; 
-}
 
 field_with_errors{
 	display:inline;
@@ -503,5 +491,43 @@ field_with_errors{
 
 .message{
 	color:red;
+}
+
+/***********************************************
+* Hover Effect
+***********************************************/ 
+
+.adipoli-wrapper
+{
+    margin:auto;
+    position:relative;
+    display: inline-block;
+}
+.adipoli-wrapper>img
+{
+    position: absolute;
+    z-index: 1;
+}
+.adipoli-before
+{
+    position: absolute;
+    z-index: 5;
+}
+.adipoli-after
+{
+    position: absolute;
+    z-index: 10;
+}
+.adipoli-slice {
+    display:block;
+    position:absolute;
+    z-index:15;
+    height:100%;
+}
+.adipoli-box
+{
+    display:block;
+    position:absolute;
+    z-index:15;
 }
 
