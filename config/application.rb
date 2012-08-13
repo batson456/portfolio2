@@ -72,5 +72,7 @@ module Port
     config.action_mailer.default_url_options = {
       :host => "gmail.com"
     }
+
+    config.assets.initialize_on_precompile = false
   end
 end
