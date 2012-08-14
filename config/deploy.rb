@@ -13,7 +13,7 @@ set :use_sudo, false
 # you may, or may not need to use this - but let's use it just in case
 ssh_options[:paranoid] = false
 # address of the production server, not that this is a variable
-set :domain, "96.126.109.233" #"IP or domain name of production server"
+set :domain, "bbatson.com" #"IP or domain name of production server"
 # the above variable is used here.
 # however, you can write these out - and may need to if you set up your environment
 # in a way that puts these things on different servers
@@ -26,7 +26,8 @@ role :db, domain, :primary => true
 set :scm, :git
 # address of our Git repository, which happens to be on Github
 # NOTE: the format of this is git@github.com:your_user_name/git_repository_name.git
-set :repository,  "git@github.com:batson456/portfolio2.git"
+set :repository,  "https://github.com/batson456/portfolio2.git"
+set :scm_passphrase, "britney12"
 # don't forget to change the above user name to yours!
 # in Git, you can have many branches.  To stay consistent with the defaults (and out example), we are using master
 set :branch, "master"
