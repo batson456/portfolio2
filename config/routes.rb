@@ -1,6 +1,9 @@
 Port::Application.routes.draw do
   root :to => 'static_pages#home'
 
+  resources :posts
+
+  match 'blog' => 'posts#index'
 
   match 'about' => 'static_pages#about'
   match 'contact' => 'static_pages#contact'

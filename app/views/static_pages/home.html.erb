@@ -1,14 +1,13 @@
-
+<div class="alert span8 offset2">
+    <button class="close" data-dismiss="alert">X</button>
+    Please be patient with me, this site is still under construction. Please feel free to look around but there may be some sections that don't quite work yet and links that don't go anywhere! Please keep checking back! <i>-- Bryce Batson</i>
+</div>
 <div class="row">
   <div class="span12">
       <div class="introduction">
         <span>Hey there! My name is <span class="orange">Bryce Batson</span>. Welcome to my portfolio! Please take a look around, there may be some stuff here that <span class="orange">amazes</span> you. If you like what you see, let me know. Hopefully I will hear from you soon!</span>
       </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="turn-up"></div>
 </div>
 
     <div class="rotator hidden-phone">
@@ -38,17 +37,27 @@
             </li>
 
             <li>
-                <a href="rot3">My Portfolio</a>
+                <a href="rot3">Katy Aftermath</a>
                 <div style="display:none;">
-                    <div class="info_image">my-portfolio.png</div>
+                    <div class="info_image">katy_aftermath.png</div>
                     <div class="info_description">
-                        Created my own portfolio website, which I scrapped and started over fresh with this one. Much better isn't it?
+                        Built a blog for one of my friends. The theme was gas masks(don't judge!) and I think we nailed the theme.
                         <br>
-                        <a href="#" class="more">Visit</a>
+                        <a href="http://www.katyaftermath.com" class="more">Visit</a>
                     </div>
                 </div>
             </li>
             
+            <li>
+                <a href="rot3">My Portfolio</a>
+                <div style="display:none;">
+                    <div class="info_image">my-portfolio.png</div>
+                    <div class="info_description">
+                        This was my first portfolio design. I scrapped it and started again with this one. Much better isn't it?
+                        <br>
+                    </div>
+                </div>
+            </li>
         </ul>
 
         <div id="rot1">
@@ -75,18 +84,21 @@
 
 <ul class="thumbnails">
     <li class="span4">
-        <a href="#">
-            <%= image_tag('wallers.png', :class => 'image') %>
+        <a href="http://www.katyaftermath.com" class="zoom">
+            <span class="roll"></span>
+            <%= image_tag('katy_aftermath.png') %>
         </a>
     </li>
     <li class="span4">
-        <a href="#">
-            <%= image_tag('my-portfolio.png', :class => 'image') %>
+        <a href="#" class="zoom">
+            <span class="roll"></span>
+            <%= image_tag('wallers.png') %>
         </a>
     </li>
     <li class="span4">
-        <a href="#">
-            <%= image_tag('danette.png', :class => 'image') %>
+        <a href="#" class="zoom">
+            <span class="roll"></span>
+            <%= image_tag('danette.png') %>
         </a>
     </li>
 </ul>
@@ -101,36 +113,14 @@
 <div class="row">
     <div class="span12">
         <div class="row">
+            <% @posts.each do |post| %>
             <div class="span4">
-                <h5>Title</h5>
-                <span class="date">May 15, 2012</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
-                <a href="#" class="button-small pull-right">Read More</a>
+                <h5><%= post.title %></h5>
+                <span class="date"><%= post.created_at.strftime("%B %Y") %></span>
+                <p><%= post.content %></p>
+                <%= link_to 'Read More', post, :class => "button-small pull-right" %>
             </div>
-            <div class="span4">
-                <h5>Title</h5>
-                <span class="date">May 15, 2012</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
-                <a href="#" class="button-small pull-right">Read More</a>
-            </div>
-            <div class="span4">
-                <h5>Title</h5>
-                <span class="date">May 15, 2012</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
-                <a href="#" class="button-small pull-right">Read More</a>
-            </div>
+            <% end %>
             
         </div>
     </div>

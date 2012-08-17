@@ -156,6 +156,43 @@ h5{
     -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+.page-curl{
+	position:relative;
+	padding:50px;
+		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.page-curl:before, .page-curl:after  
+{  
+    position: absolute;  
+    width: 40%;  
+    height: 10px;  
+    content: ' ';  
+    left: 12px;  
+    bottom: 12px;  
+    background: transparent;  
+    -webkit-transform: skew(-5deg) rotate(-5deg);  
+    -moz-transform: skew(-5deg) rotate(-5deg);  
+    -ms-transform: skew(-5deg) rotate(-5deg);  
+    -o-transform: skew(-5deg) rotate(-5deg);  
+    transform: skew(-5deg) rotate(-5deg);  
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    z-index: -1;  
+}  
+.page-curl:after  
+{  
+    left: auto;  
+    right: 12px;  
+    -webkit-transform: skew(5deg) rotate(5deg);  
+    -moz-transform: skew(5deg) rotate(5deg);  
+    -ms-transform: skew(5deg) rotate(5deg);  
+    -o-transform: skew(5deg) rotate(5deg);  
+    transform: skew(5deg) rotate(5deg);  
+}  
+
 .turn-up{
 	@extend .span12;
 	height:41px;
@@ -178,6 +215,7 @@ h5{
 ***********************************************/ 
 
 .introduction{
+	background:white;
 	border:1px solid $grayLighter;
 	padding:20px;
 	text-align:center;
@@ -185,6 +223,7 @@ h5{
 		font-weight:300;
 		font-size:20px;
 	}
+	margin-bottom:50px;
 }
 .date{
 	font-size:12px;
@@ -214,6 +253,18 @@ h5{
 .alert{
 	text-align:center;
 }
+
+/***********************************************
+* Navigation Bar
+***********************************************/
+
+.post{
+	margin-bottom:30px;
+	border-bottom:1px solid $grayLight;
+	position:relative;
+	min-height:200px;
+}
+
 
 /***********************************************
 * Navigation Bar
@@ -496,40 +547,18 @@ field_with_errors{
 /***********************************************
 * Hover Effect
 ***********************************************/ 
-.image{
-	border:1px solid #ccc;
+/*---------------
+ZOOM DEFAULT
+---------------*/
+.zoom{
+	position:relative;
+	display:block;
 }
-.adipoli-wrapper
-{
-    margin:auto;
-    position:relative;
-    display: inline-block;
-}
-.adipoli-wrapper>img
-{
-    position: absolute;
-    z-index: 1;
-}
-.adipoli-before
-{
-    position: absolute;
-    z-index: 5;
-}
-.adipoli-after
-{
-    position: absolute;
-    z-index: 10;
-}
-.adipoli-slice {
-    display:block;
-    position:absolute;
-    z-index:15;
-    height:100%;
-}
-.adipoli-box
-{
-    display:block;
-    position:absolute;
-    z-index:15;
+.roll{
+	position:absolute;
+	background: url('mag.png') center center no-repeat #000;
+	width:100%;
+	height:100%;
+	z-index:999;
 }
 
