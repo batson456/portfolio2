@@ -17,4 +17,6 @@
 //= require scripts
 //= require rails.validations
 //= require hover.zoom
+//= require jquery.defaultvalue
+//= require viewbox_min
 //= require_tree .

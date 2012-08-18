@@ -4,6 +4,10 @@ $(document).ready(function(){
         $('.alert').alert('close');
     };
 
+    $(function(){
+        $('[placeholder]').defaultValue();
+    });
+
     // hide #back-top first
     $("#back-top").hide();
     

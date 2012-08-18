@@ -6,6 +6,7 @@ Port::Application.routes.draw do
   match 'blog' => 'posts#index'
 
   match 'about' => 'static_pages#about'
+  match 'portfolio' => 'static_pages#portfolio'
   match 'contact' => 'static_pages#contact'
   match 'message' => 'contact#new', :via => :get
   match 'message' => 'contact#create', :via=> :post
