@@ -40,7 +40,7 @@ $(document).ready(function(){
  
             // SET OPACITY TO 70%
             $(this).stop().animate({
-               opacity: .7
+               opacity: .5
             }, "slow");
         },
  
@@ -53,6 +53,7 @@ $(document).ready(function(){
             }, "slow");
         });
     });
+
 }); // End document.ready
 
 // Twitter feed javascript

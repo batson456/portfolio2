@@ -94,6 +94,9 @@ h5{
 	line-height:1.5em;
 	font-weight:200;
 }
+.fifty-percent{
+	width:40%;
+}
 /***********************************************
 * Links
 ***********************************************/
@@ -156,58 +159,12 @@ h5{
     -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.page-curl{
-	position:relative;
-	padding:50px;
-		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-}
-.page-curl:before, .page-curl:after  
-{  
-    position: absolute;  
-    width: 40%;  
-    height: 10px;  
-    content: ' ';  
-    left: 12px;  
-    bottom: 12px;  
-    background: transparent;  
-    -webkit-transform: skew(-5deg) rotate(-5deg);  
-    -moz-transform: skew(-5deg) rotate(-5deg);  
-    -ms-transform: skew(-5deg) rotate(-5deg);  
-    -o-transform: skew(-5deg) rotate(-5deg);  
-    transform: skew(-5deg) rotate(-5deg);  
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
-    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
-    z-index: -1;  
-}  
-.page-curl:after  
-{  
-    left: auto;  
-    right: 12px;  
-    -webkit-transform: skew(5deg) rotate(5deg);  
-    -moz-transform: skew(5deg) rotate(5deg);  
-    -ms-transform: skew(5deg) rotate(5deg);  
-    -o-transform: skew(5deg) rotate(5deg);  
-    transform: skew(5deg) rotate(5deg);  
-}  
 
-.turn-up{
-	@extend .span12;
-	height:41px;
-	background:url('turn-up.png');
-	background-position:20px 0;
-	background-repeat:no-repeat;
-}
-
-.arrow-right {
-	width: 0; 
-	height: 0; 
-	border-top: 20px solid transparent;
-	border-bottom: 20px solid transparent;
-	
-	border-left: 20px solid green;
+.image_shadow{
+	margin:0;
+	padding:0;
+	width:100%;
+	display:block;
 }
 
 /***********************************************
@@ -216,7 +173,6 @@ h5{
 
 .introduction{
 	background:white;
-	border:1px solid $grayLighter;
 	padding:20px;
 	text-align:center;
 	span{
@@ -255,7 +211,38 @@ h5{
 }
 
 /***********************************************
-* Navigation Bar
+* Images
+***********************************************/
+
+.thumbnails{
+	li{
+		line-height:0;
+	}
+}
+.image{
+	background: eggshell;
+	border: 1px solid white;
+	padding: 4px;
+	outline: 1px solid #EAEAEA;
+	img{
+		background:url('loader.gif');
+	}
+}
+
+.zoom{
+	position:relative;
+	display:block;
+}
+.roll{
+	position:absolute;
+	background: url('hover.png') center center no-repeat #FFF;
+	width:100%;
+	height:100%;
+	z-index:999;
+}
+
+/***********************************************
+* Blog
 ***********************************************/
 
 .post{
@@ -542,24 +529,6 @@ field_with_errors{
 
 .message{
 	color:red;
-}
-
-/***********************************************
-* Hover Effect
-***********************************************/ 
-/*---------------
-ZOOM DEFAULT
----------------*/
-.zoom{
-	position:relative;
-	display:block;
-}
-.roll{
-	position:absolute;
-	background: url('mag.png') center center no-repeat #000;
-	width:100%;
-	height:100%;
-	z-index:999;
 }
 
 /***********************************************
