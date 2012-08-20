@@ -77,7 +77,6 @@ a{
 	color:$orange;
 }
 a:hover{
-	text-decoration:none;
 	color:$orange;
 }
 h1,h2,h3,h4{
@@ -247,9 +246,39 @@ h5{
 
 .post{
 	margin-bottom:30px;
-	border-bottom:1px solid $grayLight;
 	position:relative;
 	min-height:200px;
+}
+.post_info{
+	border-top:1px solid $grayLighter;
+	border-bottom:1px solid $grayLighter;
+	padding:10px 0 10px 0;
+	margin:10px 0 25px 0;
+	ul{
+		display:inline;
+		margin-left:0em;
+		li{
+			display:inline;
+		}
+		li:after{
+			content: " // ";
+		}
+		li:last-child:after{
+			content:'';
+		}
+	}
+}
+
+.bordered_list{
+	margin-top:20px;
+	margin-left:1em;
+	list-style:none;
+	li{
+		border-bottom:1px solid $grayLighter;
+		padding:5px;
+		display:block;
+		list-style:none;
+	}
 }
 
 

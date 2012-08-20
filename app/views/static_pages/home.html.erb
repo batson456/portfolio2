@@ -73,7 +73,11 @@
 
 <div class="row">
     <div class="span12">
-        <h4>Recent Posts <span class="more-link pull-right"><a href="#">View All</a></h4></span>
+        <h4>Recent Posts 
+            <span class="more-link pull-right">
+                <%= link_to 'View All', posts_path %>
+            </span>
+        </h4>
     </div>
 </div>
 
@@ -83,7 +87,7 @@
             <% @posts.each do |post| %>
             <div class="span4">
                 <h5><%= post.title %></h5>
-                <span class="date"><%= post.created_at.strftime("%B %Y") %></span>
+                <span class="date">Posted <%= time_ago_in_words(post.created_at) %> ago</span>
                 <p><%= post.content %></p>
                 <%= link_to 'Read More', post, :class => "button-small pull-right" %>
             </div>

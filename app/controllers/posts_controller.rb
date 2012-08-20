@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
 	def index
 		@posts = Post.all()
 
@@ -18,7 +19,7 @@ class PostsController < ApplicationController
 	end
 
 	def new
-		@post = Post.new :include => :category
+		@post = Post.new
 
 		respond_to do |format|
 			format.html # new.html.erb
@@ -39,5 +40,15 @@ class PostsController < ApplicationController
   		end
   	end
 	end
+
+	def category
+		@posts = Category.find(params[:id]).posts
+
+		respond_to do |format|
+			format.html #categories.html.erb
+			format.json { render :json => @categories}
+		end
+	end
+
 	
 end

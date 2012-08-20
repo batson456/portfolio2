@@ -1,9 +1,9 @@
 Port::Application.routes.draw do
   root :to => 'static_pages#home'
 
-  resources :posts do
-    resources :categories
-  end
+  resources :posts
+
+  match '/category/:id' => 'posts#category', :as => :category
 
   match 'blog' => 'posts#index'
 

@@ -3,8 +3,24 @@
 		<% @posts.each do |post| %>
 			<div class="post">
 	      <h5><%= post.title %></h5>
-	      <span class="date"><%= post.created_at.strftime("%B %Y") %></span>
+	      <div class="post_info">
+		    	
+		    	<i>Posted</i>
+
+		    	<span class="date">
+		      	 <%= time_ago_in_words post.created_at %>
+		      </span>
+
+		      <i>in</i>
+
+		      <ul>
+				    <% post.categories.each do |category| %>
+					    <li><%= link_to category.category, category_path(category.id) %></li>
+					  <% end %>
+		      </ul>
+		    </div>
 	      <p><%= post.content %></p>
+	      
 	      <%= link_to 'Read More', post, :class => "button-small pull-right" %>
 	    </div>
 		<% end %>

@@ -11,7 +11,7 @@
 	<br>
 
 	<%= f.label :category %>
-	<%= f.select :category, Category.all.collect { |c| [c.name, c.id] } %>
+	<%= f.select :category_ids, Category.all.collect {|x| [x.category, x.id]}, {}, :multiple => true %>
 
 
 	<%= f.submit 'Create' %>
