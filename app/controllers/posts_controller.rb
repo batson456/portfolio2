@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 	end
 
 	def new
-		@post = Post.new
+		@post = Post.new :include => :category
 
 		respond_to do |format|
 			format.html # new.html.erb

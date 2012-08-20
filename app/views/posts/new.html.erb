@@ -8,6 +8,11 @@
 	<%= f.label :content %>
 	<%= f.text_area :content %>
 
+	<br>
+
+	<%= f.label :category %>
+	<%= f.select :category, Category.all.collect { |c| [c.name, c.id] } %>
+
 
 	<%= f.submit 'Create' %>
 

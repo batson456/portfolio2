@@ -400,6 +400,13 @@ h5{
 #slider{
 	margin-bottom:60px;
 }
+.rotator{
+	img{
+		width:100%;
+		border:none;
+		height:auto;
+	}
+}
 .rotator .heading{
     position:absolute;
     top:0px;
@@ -471,11 +478,7 @@ a.more{
     clear:both;
     width:260px;
 }
-img{
-	width:100%;
-	border:none;
-	height:auto;
-}
+
 img.bg{
     position:absolute;
     top:0px;
