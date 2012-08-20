@@ -7,6 +7,8 @@ gem 'rails', '3.2.6'
 
 gem 'bootstrap-sass'
 gem 'client_side_validations'
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :development, :test do
 	gem 'rspec-rails'

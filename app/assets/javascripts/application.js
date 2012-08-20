@@ -19,4 +19,5 @@
 //= require hover.zoom
 //= require jquery.defaultvalue
 //= require viewbox_min
-//= require_tree .
+//= require_directory ./tweet
+//= require_directory .

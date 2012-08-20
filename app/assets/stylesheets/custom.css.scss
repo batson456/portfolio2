@@ -67,7 +67,8 @@ $orange:#F15A23;
 body{
 	border-top:5px solid $gray;
 	color:$grayLight;
-	font:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	background:#f8f8f8;
+	font-family: "Lucida Sans Unicode","Lucida Grande","Droid Sans",sans-serif;
 
 }
 .content{
@@ -171,7 +172,7 @@ h5{
 ***********************************************/ 
 
 .introduction{
-	background:white;
+	background:transparent;
 	padding:20px;
 	text-align:center;
 	span{
