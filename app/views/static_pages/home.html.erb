@@ -87,7 +87,7 @@
             <% @posts.each do |post| %>
                 <% unless post.image.url.empty? %>
                     <div class="span4">
-                        <h5><%= post.title %></h5>
+                        <h6><%= post.title %></h6>
                         <span class="date">Posted <%= time_ago_in_words(post.created_at) %> ago</span>
 
                         <%= image_tag('top-shadow.png') %>
@@ -98,7 +98,7 @@
                             </div>
                         <%= image_tag('bottom-shadow.png') %>
 
-                        <p><%= raw HTML_Truncator.truncate(post.content,200) %></p>
+                        <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
                         <%= link_to 'Read More', post, :class => "button-small pull-right" %>
                     </div>
                 <% end %>
