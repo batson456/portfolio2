@@ -1,16 +1,23 @@
 <div class="span8">
-  <h5 class="blog_title"><%= @post.title %></h5>
+  <div class="post">
+    <h5><%= @post.title %></h5>
     <div class="post_info">
-    	<span class="date">
-      	Posted <%= time_ago_in_words @post.created_at %>
+      
+      <i>Posted</i>
+
+      <span class="date">
+         <%= time_ago_in_words @post.created_at %> ago
       </span>
 
-      in
-      <ul>
-		    <% @post.categories.each do |category| %>
-			    <li><%= link_to category.category, category_path(category.id) %></li>
-			  <% end %>
-      </ul>
+      <% unless @post.categories.empty? %>
+        <i>in</i>
+
+        <ul>
+          <% @post.categories.each do |category| %>
+            <li><%= link_to category.category, category_path(category.id) %></li>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
 
     <%= image_tag('top-shadow.png') %>
@@ -20,7 +27,9 @@
             
         </div>
     <%= image_tag('bottom-shadow.png') %>
-
+    
     <p><%= raw @post.content %></p>
+    
+  </div>
       
 </div>

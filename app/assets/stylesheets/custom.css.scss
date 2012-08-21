@@ -186,6 +186,11 @@ h5{
 	p,a{
 		line-height:1.6em;
 	}
+	h6{
+		font-size:1.2em;
+		border-bottom:1px solid $grayLighter;
+		padding:5px 0 5px 0;
+	}
 }
 .date{
 	font-size:12px;

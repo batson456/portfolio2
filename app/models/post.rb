@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
 
   has_attached_file :image, :styles => { :medium => "600x200#", :thumb => "300x100#" }
 
-  validates :title, :content, :presence => true
+  validates :title, :content, :image, :presence => true
 
   has_many :categorizations
   has_many :categories, :through => :categorizations

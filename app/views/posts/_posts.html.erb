@@ -6,16 +6,18 @@
 	  	<i>Posted</i>
 
 	  	<span class="date">
-	    	 <%= time_ago_in_words post.created_at %>
+	    	 <%= time_ago_in_words post.created_at %> ago
 	    </span>
 
-	    <i>in</i>
+	    <% unless post.categories.empty? %>
+	    	<i>in</i>
 
-	    <ul>
-		    <% post.categories.each do |category| %>
-			    <li><%= link_to category.category, category_path(category.id) %></li>
-			  <% end %>
-	    </ul>
+		    <ul>
+			    <% post.categories.each do |category| %>
+				    <li><%= link_to category.category, category_path(category.id) %></li>
+				  <% end %>
+		    </ul>
+		  <% end %>
 	  </div>
 
 	  <%= image_tag('top-shadow.png') %>
