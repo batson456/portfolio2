@@ -1,0 +1,33 @@
+<% @posts.each do |post| %>
+	<div class="post">
+	  <h5><%= post.title %></h5>
+	  <div class="post_info">
+	  	
+	  	<i>Posted</i>
+
+	  	<span class="date">
+	    	 <%= time_ago_in_words post.created_at %>
+	    </span>
+
+	    <i>in</i>
+
+	    <ul>
+		    <% post.categories.each do |category| %>
+			    <li><%= link_to category.category, category_path(category.id) %></li>
+			  <% end %>
+	    </ul>
+	  </div>
+
+	  <%= image_tag('top-shadow.png') %>
+	      <div class="image">
+	          
+	              <%= image_tag post.image.url(:medium) %>
+	          
+	      </div>
+	  <%= image_tag('bottom-shadow.png') %>
+	  
+	  <p><%= raw HTML_Truncator.truncate(post.content, 300) %></p>
+	  
+	  <%= link_to 'Read More', post, :class => "button-small pull-right" %>
+	</div>
+<% end %>

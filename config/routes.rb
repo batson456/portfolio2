@@ -1,5 +1,6 @@
 Port::Application.routes.draw do
-  mount Rich::Engine => '/rich', :as => 'rich'
+
+  mount Ckeditor::Engine => '/ckeditor'
 
   ActiveAdmin.routes(self)
 

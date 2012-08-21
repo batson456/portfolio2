@@ -10,7 +10,8 @@ gem 'client_side_validations'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 gem "paperclip", "~> 3.0"
-gem 'rich'
+gem "ckeditor", "3.7.1"
+gem "html_truncator", "~>0.2"
 
 group :development, :test do
 	gem 'rspec-rails'

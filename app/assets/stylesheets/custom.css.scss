@@ -181,6 +181,12 @@ h5{
 	}
 	margin-bottom:50px;
 }
+#recent_posts{
+	line-height:0;
+	p,a{
+		line-height:1.6em;
+	}
+}
 .date{
 	font-size:12px;
 	color:$orange;
@@ -226,6 +232,7 @@ h5{
 	outline: 1px solid #EAEAEA;
 	img{
 		background:url('loader.gif') no-repeat center center;
+		width:100%;
 	}
 }
 
@@ -254,7 +261,7 @@ h5{
 	border-top:1px solid $grayLighter;
 	border-bottom:1px solid $grayLighter;
 	padding:10px 0 10px 0;
-	margin:10px 0 25px 0;
+	margin:10px 0 15px 0;
 	ul{
 		display:inline;
 		margin-left:0em;

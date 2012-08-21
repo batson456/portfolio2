@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
 
+	require 'html_truncator'
+
 	def index
+
 		@posts = Post.all()
 
 		respond_to do |format|
@@ -19,6 +22,8 @@ class PostsController < ApplicationController
 	end
 
 	def category
+		require 'html_truncator'
+
 		@posts = Category.find(params[:id]).posts
 
 		respond_to do |format|

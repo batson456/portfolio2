@@ -83,14 +83,25 @@
 
 <div class="row">
     <div class="span12">
-        <div class="row">
+        <div id="recent_posts" class="row">
             <% @posts.each do |post| %>
-            <div class="span4">
-                <h5><%= post.title %></h5>
-                <span class="date">Posted <%= time_ago_in_words(post.created_at) %> ago</span>
-                <p><%= post.content %></p>
-                <%= link_to 'Read More', post, :class => "button-small pull-right" %>
-            </div>
+                <% unless post.image.url.empty? %>
+                    <div class="span4">
+                        <h5><%= post.title %></h5>
+                        <span class="date">Posted <%= time_ago_in_words(post.created_at) %> ago</span>
+
+                        <%= image_tag('top-shadow.png') %>
+                            <div class="image">
+                                
+                                    <%= image_tag post.image.url(:thumb) %>
+                                
+                            </div>
+                        <%= image_tag('bottom-shadow.png') %>
+
+                        <p><%= raw HTML_Truncator.truncate(post.content,200) %></p>
+                        <%= link_to 'Read More', post, :class => "button-small pull-right" %>
+                    </div>
+                <% end %>
             <% end %>
             
         </div>

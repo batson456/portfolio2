@@ -1,28 +1,7 @@
 <div class="row">
 	<div class="span8">
 		<% @posts.each do |post| %>
-			<div class="post">
-	      <h5><%= post.title %></h5>
-	      <div class="post_info">
-		    	
-		    	<i>Posted</i>
-
-		    	<span class="date">
-		      	 <%= time_ago_in_words post.created_at %>
-		      </span>
-
-		      <i>in</i>
-
-		      <ul>
-				    <% post.categories.each do |category| %>
-					    <li><%= link_to category.category, category_path(category.id) %></li>
-					  <% end %>
-		      </ul>
-		    </div>
-	      <p><%= post.content %></p>
-	      
-	      <%= link_to 'Read More', post, :class => "button-small pull-right" %>
-	    </div>
+			<%= render :partial => 'posts' %>
 		<% end %>
 	</div>
 	<div class="span4">

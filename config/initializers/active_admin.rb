@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Port"
+  config.site_title = "Bryce Batson's Portfolio"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -132,4 +132,5 @@ ActiveAdmin.setup do |config|
 
   config.clear_javascripts!
   config.register_javascript 'admin/active_admin.js'
+  config.register_javascript 'ckeditor/init'
 end

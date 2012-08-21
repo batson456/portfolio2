@@ -1,0 +1,26 @@
+<div class="span8">
+  <h5 class="blog_title"><%= @post.title %></h5>
+    <div class="post_info">
+    	<span class="date">
+      	Posted <%= time_ago_in_words @post.created_at %>
+      </span>
+
+      in
+      <ul>
+		    <% @post.categories.each do |category| %>
+			    <li><%= link_to category.category, category_path(category.id) %></li>
+			  <% end %>
+      </ul>
+    </div>
+
+    <%= image_tag('top-shadow.png') %>
+        <div class="image">
+            
+                <%= image_tag @post.image.url(:medium) %>
+            
+        </div>
+    <%= image_tag('bottom-shadow.png') %>
+
+    <p><%= raw @post.content %></p>
+      
+</div>

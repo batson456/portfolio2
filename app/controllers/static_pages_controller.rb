@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
+    require 'html_truncator'
+    
   	@posts = Post.all(:limit => 3, :order => ":created_at DESC")
 
   	respond_to do |format|
