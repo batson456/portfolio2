@@ -10,7 +10,7 @@ gem 'client_side_validations'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 gem "paperclip", "~> 3.0"
-gem "ckeditor", "3.7.1"
+gem "ckeditor", :git => 'https://github.com/batson456/ckeditor'
 gem "html_truncator", "~>0.2"
 
 group :development, :test do
