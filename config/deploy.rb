@@ -68,4 +68,6 @@ namespace :deploy do
      # nothing
    end
 end
+
+
 after 'deploy:update_code', 'deploy:sync_config', 'deploy:restart'

@@ -12,10 +12,12 @@ ActiveAdmin.register Post do
       f.inputs "Details" do
         f.input :title
 
+        f.input :image, :as => :rich_picker, :config => { :style => 'width: 400px !important;' }
+
         f.input :categories, :as => :check_boxes, :collection => Category.all.collect { |c| [c.category, c.id]}
       end
       f.inputs "Content" do
-        f.input :content
+        f.input :content, :as => :rich, :config => { :width => '76%', :height => '400px' }
       end
       f.buttons
     end

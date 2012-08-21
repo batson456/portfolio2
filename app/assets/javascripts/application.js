@@ -20,4 +20,5 @@
 //= require jquery.defaultvalue
 //= require viewbox_min
 //= require_directory ./tweet
+//= require rich
 //= require_directory .
