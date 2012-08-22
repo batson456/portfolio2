@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
-	<div class="post">
+	<div id="blog_post" class="post">
 	  <h5><%= post.title %></h5>
 	  <div class="post_info">
 	  	
@@ -30,6 +30,6 @@
 	  
 	  <p><%= raw HTML_Truncator.truncate(post.content, 300) %></p>
 	  
-	  <%= link_to 'Read More', post, :class => "button-small pull-right" %>
+	  <%= link_to 'Read More', post, :class => "btn button-small pull-right" %>
 	</div>
 <% end %>

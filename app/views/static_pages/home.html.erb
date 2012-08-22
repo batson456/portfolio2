@@ -1,5 +1,5 @@
 <div class="alert span8 offset2">
-    <button class="close" data-dismiss="alert">X</button>
+    <button class="close" data-dismiss="alert">x</button>
     Please be patient with me, this site is still under construction. Please feel free to look around but there may be some sections that don't quite work yet and links that don't go anywhere! Please keep checking back! <i>-- Bryce Batson</i>
 </div>
 <div class="row">
@@ -9,7 +9,7 @@
       </div>
   </div>
 </div>
-
+<div id="slider">
     <div class="rotator hidden-phone">
         <ul id="rotmenu">
             <li>
@@ -70,6 +70,25 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="why-me" class="row">
+    <div class="span4">
+        <%= image_tag('orange-design.png', :class => 'pull-left') %>
+        <h3>Design</h3>
+        <p></p>
+    </div>
+    <div class="span4">
+        <%= image_tag('orange-code.png', :class => 'pull-left') %>
+        <h3>Develop</h3>
+        <p></p>
+    </div>
+    <div class="span4">
+        <%= image_tag('orange-web.png', :class => 'pull-left') %>
+        <h3>Deploy</h3>
+        <p></p>
+    </div>
+</div>
 
 <div class="row">
     <div class="span12">
@@ -97,7 +116,7 @@
                         <%= image_tag('bottom-shadow.png') %>
 
                         <h6><%= post.title %></h6>
-                        
+
                         <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
                         <%= link_to 'Read More', post, :class => "button-small pull-right" %>
                     </div>
