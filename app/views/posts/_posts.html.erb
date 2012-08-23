@@ -20,6 +20,7 @@
 		  <% end %>
 	  </div>
 
+	  <% if post.image?%>
 	  <%= image_tag('top-shadow.png') %>
 	      <div class="image">
 	          
@@ -27,6 +28,7 @@
 	          
 	      </div>
 	  <%= image_tag('bottom-shadow.png') %>
+	  <% end %>
 	  
 	  <p><%= raw HTML_Truncator.truncate(post.content, 300) %></p>
 	  

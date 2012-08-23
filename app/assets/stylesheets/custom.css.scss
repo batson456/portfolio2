@@ -13,6 +13,7 @@ $orange:#F15A23;
 @import "bootstrap-responsive";
 @import url(http://fonts.googleapis.com/css?family=Merienda+One);
 @import url(http://fonts.googleapis.com/css?family=Dr+Sugiyama);
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
 
 
 /***********************************************
@@ -69,6 +70,7 @@ body{
 	color:$grayLight;
 	background:#f8f8f8;
 	font-family: "Lucida Sans Unicode","Lucida Grande","Droid Sans",sans-serif;
+	font-family: 'Quicksand', sans-serif;
 
 }
 .content{
@@ -175,9 +177,13 @@ h5{
 	text-align:center;
 	span{
 		font-weight:300;
-		font-size:20px;
+		font-size:25px;
+		line-height:1.3em;
 	}
 	margin-bottom:50px;
+}
+#testimonial{
+	margin:60px 0 40px 0;
 }
 #recent_posts{
 	line-height:0;

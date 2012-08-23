@@ -1,4 +1,9 @@
 ActiveAdmin.register Post do
+
+  controller do
+    defaults :finder => :find_by_slug
+  end
+  
   index :as => :blog do
     title :title # Calls #my_title on each resource
     body  do |post|
@@ -13,6 +18,8 @@ ActiveAdmin.register Post do
         f.input :title
 
         f.input :image
+
+        f.input :status, :as => :select, :collection => ['published', 'draft', 'featured', 'archived']
 
         f.input :categories, :as => :check_boxes, :collection => Category.all.collect { |c| [c.category, c.id]}
       end

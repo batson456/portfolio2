@@ -72,15 +72,16 @@
     </div>
 </div>
 
+<!--
 <div id="why-me" class="row">
     <div class="span4">
         <%= image_tag('orange-design.png', :class => 'pull-left') %>
-        <h3>Design</h3>
+        <h3>Why Me?</h3>
         <p></p>
     </div>
     <div class="span4">
         <%= image_tag('orange-code.png', :class => 'pull-left') %>
-        <h3>Develop</h3>
+        <h3>What Do I Do?</h3>
         <p></p>
     </div>
     <div class="span4">
@@ -89,6 +90,7 @@
         <p></p>
     </div>
 </div>
+-->
 
 <div class="row">
     <div class="span12">
@@ -104,30 +106,42 @@
     <div class="span12">
         <div id="recent_posts" class="row">
             <% @posts.each do |post| %>
-                <% unless post.image.url.empty? %>
-                    <div class="span4">
+                
+                <div class="span4">
 
-                        <%= image_tag('top-shadow.png') %>
-                            <div class="image">
-                                
-                                    <%= image_tag post.image.url(:thumb) %>
-                                
-                            </div>
-                        <%= image_tag('bottom-shadow.png') %>
+                    <% if post.image? %>
 
-                        <h6><%= post.title %></h6>
+                    <%= image_tag('top-shadow.png') %>
+                        <div class="image">
+                            
+                                <%= image_tag post.image.url(:thumb) %>
+                            
+                        </div>
+                    <%= image_tag('bottom-shadow.png') %>
+                    <% end %>
 
-                        <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
-                        <%= link_to 'Read More', post, :class => "button-small pull-right" %>
-                    </div>
-                <% end %>
+                    <h6><%= post.title %></h6>
+
+                    <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
+                    <%= link_to 'Read More', post, :class => "button-small pull-right" %>
+                </div>
+
             <% end %>
             
         </div>
     </div>
 </div>
 
-<hr>
+<div id="testimonial" class="row">
+    <div class="span8 offset2">
+        <div class="hero-unit">
+            <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
+            </p>
+            <br>
+            <i class="pull-right">-- Danette Duprey</i>
+        </div>
+    </div>
+</div>
 
 <div class="row">
     <div class="span12">

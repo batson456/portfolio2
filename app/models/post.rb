@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
-  attr_accessible :content, :title, :category_ids, :image
+	before_create :create_slug
+  attr_accessible :content, :title,:status, :category_ids, :image
 
   has_attached_file :image, :styles => { :medium => "600x200#", :thumb => "300x100#" }
 
@@ -8,20 +9,18 @@ class Post < ActiveRecord::Base
   has_many :categorizations
   has_many :categories, :through => :categorizations
 
-  PUBLISHED = 1
-  FEATURED  = 2
-  DRAFT     = 3
-  ARCHIVED  = 4
+  STATUSES = ['published', 'draft', 'featured', 'archived']
 
-  STATUSES = {
-  	PUBLISHED = 'published',
-  	ACTIVE    = 'featured',
-  	DRAFT     = 'draft',
-  	ARCHIVED  = 'archived'
-  }
+  validates_inclusion_of :status, :in => STATUSES, 
+  	:message => "{{value}} must be in #{STATUSES.join ','}"
 
-  def status_name
-  	STATUSES[status]
+
+  def to_param
+    slug
   end
 
+  def create_slug
+    self.slug = self.title.parameterize
+  end
+  
 end

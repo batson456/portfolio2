@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
 	def index
 
-		@posts = Post.all()
+		@posts = Post.where('status = ? OR status = ?', 'published', 'featured').order('created_at DESC')
 
 		respond_to do |format|
 			format.html # index.html.erb
@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
-		@post = Post.find(params[:id])
+		@post = Post.find_by_slug(params[:id])
 
 		respond_to do |format|
 			format.html # show.html.erb

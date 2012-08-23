@@ -7,7 +7,5 @@ class CreatePosts < ActiveRecord::Migration
       t.timestamps
     end
 
-    Post.create(title: "Example Title 1", content: "Some basic example content")
-    Post.create(title: "Example Title 2", content: "Some more basic example content")
   end
 end
