@@ -8,4 +8,20 @@ class Post < ActiveRecord::Base
   has_many :categorizations
   has_many :categories, :through => :categorizations
 
+  PUBLISHED = 1
+  FEATURED  = 2
+  DRAFT     = 3
+  ARCHIVED  = 4
+
+  STATUSES = {
+  	PUBLISHED = 'published',
+  	ACTIVE    = 'featured',
+  	DRAFT     = 'draft',
+  	ARCHIVED  = 'archived'
+  }
+
+  def status_name
+  	STATUSES[status]
+  end
+
 end
