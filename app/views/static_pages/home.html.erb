@@ -72,42 +72,71 @@
     </div>
 </div>
 
-<!--
+<!-- Why Me?-->
 <div id="why-me" class="row">
+
+    <h3 class="span12">Why do I do?</h3>
+    <br>
+    <br>
     <div class="span4">
         <%= image_tag('orange-design.png', :class => 'pull-left') %>
-        <h3>Why Me?</h3>
-        <p></p>
+        <h2>Design</h2>
+        <hr>
+        <p>You know what you want to make, but you just don't quite know how to make it. That is where I come in. I will work with you on any project to design a clean and effective web design that you can be proud of, whethere it is a personal blog or professional business website.</p>
     </div>
     <div class="span4">
         <%= image_tag('orange-code.png', :class => 'pull-left') %>
-        <h3>What Do I Do?</h3>
-        <p></p>
+        <h2>Develop</h2>
+        <hr>
+        <p>There is so much more to web development these days than a simple design. With my skills as a PHP and Ruby developer, I can make sure you have all the features you are looking for in your project, from a blog to a shopping cart, we can make it work.</p>
     </div>
     <div class="span4">
         <%= image_tag('orange-web.png', :class => 'pull-left') %>
-        <h3>Deploy</h3>
-        <p></p>
+        <h2>Deploy</h2>
+        <hr>
+        <p>Everything is finished, you want to show your new website off to the world, and I can make sure that you get that wish. Whether you need hosting, or you just want me to help you set it up, I will be your guide to make sure you get your finished product seen.</p>
     </div>
+
 </div>
--->
+
+
+</div>
+
+<div class="dark_callout hidden-phone">
+
+    <p>
+        <i>I will work with you from beginning to end to design your dream website. Let's create the next best thing together!</i>
+    </p>
+
+</div>
+
+<div class="container">
+
+<!--/ Why Me? -->
 
 <div class="row">
-    <div class="span12">
+    <div class="span6">
         <h4>Recent Posts 
             <span class="more-link pull-right">
                 <%= link_to 'View All', posts_path %>
             </span>
         </h4>
     </div>
+    <div class="span6 hidden-phone">
+        <h4>Testimonials
+            <span class="more-link pull-right">
+                
+            </span>
+        </h4>
+    </div>
 </div>
 
 <div class="row">
-    <div class="span12">
+    <div class="span6">
         <div id="recent_posts" class="row">
             <% @posts.each do |post| %>
                 
-                <div class="span4">
+                <div class="span3">
 
                     <% if post.image? %>
 
@@ -130,10 +159,8 @@
             
         </div>
     </div>
-</div>
 
-<div id="testimonial" class="row">
-    <div class="span8 offset2">
+    <div class="span6 hidden-phone">
         <div class="hero-unit">
             <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
             </p>
@@ -141,7 +168,12 @@
             <i class="pull-right">-- Danette Duprey</i>
         </div>
     </div>
+
 </div>
+
+<br>
+<hr>
+<br>
 
 <div class="row">
     <div class="span12">

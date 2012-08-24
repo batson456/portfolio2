@@ -24,7 +24,7 @@ class PostsController < ApplicationController
 	def category
 		require 'html_truncator'
 
-		@posts = Category.find(params[:id]).posts
+		@posts = Category.find(params[:id]).posts.where('status = ? OR status = ?', 'featured', 'published')
 
 		respond_to do |format|
 			format.html #categories.html.erb
