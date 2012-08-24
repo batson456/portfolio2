@@ -13,8 +13,7 @@ $orange:#F15A23;
 @import "bootstrap-responsive";
 @import url(http://fonts.googleapis.com/css?family=Merienda+One);
 @import url(http://fonts.googleapis.com/css?family=Dr+Sugiyama);
-@import url(http://fonts.googleapis.com/css?family=Quicksand);
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 /***********************************************
 * Defaults
@@ -70,7 +69,7 @@ body{
 	color:$grayLight;
 	background:#f8f8f8;
 	font-family: "Lucida Sans Unicode","Lucida Grande","Droid Sans",sans-serif;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 
 }
 .content{
@@ -457,8 +456,12 @@ p{
 
 }
 #footer_bottom{
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 40px;
+	padding-right: 40px;
 	background:#303030;
-	padding:12px 0;
+	padding-top:12px;
 	a{
 		padding-left:10px;
 		padding-right:10px;
