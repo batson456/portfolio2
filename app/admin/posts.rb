@@ -21,7 +21,7 @@ ActiveAdmin.register Post do
 
         f.input :status, :as => :select, :collection => ['published', 'draft', 'featured', 'archived']
 
-        f.input :categories, :as => :check_boxes, :collection => Category.all.collect { |c| [c.category, c.id]}
+        f.input :categories, :as => :select, :collection => Category.all.collect { |c| [c.category, c.id]}
       end
       f.inputs "Content" do
         f.input :content, :as => :ckeditor, :input_html => { :height => 400 }
