@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 	end
 
 	def prepare_sidebar_data
-		@sidebar = Post.all
+		@sidebar = Post.where('status = ? OR status = ?', 'featured', 'published').limit(10)
 		@categories = Category.all
 	end
 
