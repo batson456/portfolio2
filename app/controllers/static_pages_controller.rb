@@ -1,8 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
     require 'html_truncator'
-    
-  	@posts = Post.all(:limit => 4, :order => "created_at DESC")
+
+  	@posts = Post.where('status = ? or status = ?', 'featured', 'published').limit(4)
 
   	respond_to do |format|
   		format.html #home.html.erb
