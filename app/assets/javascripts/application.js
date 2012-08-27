@@ -15,10 +15,9 @@
 //= require jquery.easing
 //= require bootstrap
 //= require scripts
+//= require jquery.bxSlider.min.js
 //= require rails.validations
-//= require hover.zoom
 //= require jquery.defaultvalue
-//= require viewbox_min
 //= require_directory ./tweet
 //= require ckeditor/init
 //= require_directory .

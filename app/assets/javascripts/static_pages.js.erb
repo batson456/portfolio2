@@ -80,3 +80,21 @@ $(document).ready(function(){
 
 });
 
+// BX_Slider calls
+$(function(){
+  var slider = $('#slider1').bxSlider({
+    controls: false,
+    displaySlideQty : 3
+  });
+
+  $('#go-prev').click(function(){
+    slider.goToPreviousSlide();
+    return false;
+  });
+
+  $('#go-next').click(function(){
+    slider.goToNextSlide();
+    return false;
+  });
+});
+

@@ -105,14 +105,15 @@
     <div class="span12">
         <h4>
             Latest Projects 
-            <span class="more-link pull-right">
-                <%= link_to 'View All', portfolio_path %>
+            <span class="pull-right">
+                <%= link_to 'Prev', '#', :id => 'go-prev' %>
+                <%= link_to 'Next', '#', :id => 'go-next' %>
             </span>
         </h4>
     </div>
 </div>
 
-<ul class="thumbnails">
+<ul id="slider1" class="thumbnails">
     <li class="span4">
         <%= image_tag('top-shadow.png') %>
         <div class="image">
@@ -144,6 +145,7 @@
      <%= image_tag('bottom-shadow.png') %>
     </li>
 </ul>
+        
 
 <br>
 <hr>
