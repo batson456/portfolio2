@@ -15,7 +15,7 @@
 //= require jquery.easing
 //= require bootstrap
 //= require scripts
-//= require jquery.bxSlider.min.js
+//= require jquery.bxSlider
 //= require rails.validations
 //= require jquery.defaultvalue
 //= require_directory ./tweet
