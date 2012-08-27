@@ -68,13 +68,10 @@ body{
 	border-top:5px solid $gray;
 	color:$grayLight;
 	background:#f8f8f8;
-	font-family: "Lucida Sans Unicode","Lucida Grande","Droid Sans",sans-serif;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Rhomus", sans-serif;
 
 }
-.content{
-	min-height:600px;
-}
+
 a{
 	color:$orange;
 }
@@ -179,7 +176,14 @@ p{
 	height:80px;
 	left:0;
 	color:white;
-	margin:20px 0 20px 0;
+	margin:50px 0 50px 0;
+}
+
+.spacer{
+	@extend .span4;
+	margin:0 auto;
+	margin-top:60px;
+	margin-bottom:60px;
 }
 
 /***********************************************
@@ -195,7 +199,6 @@ p{
 		font-size:25px;
 		line-height:1.3em;
 	}
-	margin-bottom:50px;
 }
 #testimonial{
 	p{
@@ -220,11 +223,8 @@ p{
 		font-size:1.3em;
 		margin-bottom:20px;
 	}
-	img{
-		margin-right:10px;
-	}
-	p{
-
+	.span4{
+		text-align:center;
 	}
 }
 .date{

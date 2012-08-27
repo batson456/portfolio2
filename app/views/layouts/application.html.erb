@@ -39,14 +39,14 @@
 </div>
 
 <select name="menu" id="menu" class="visible-phone">
-	<option value="home">Home</option>
-	<option value="about">About</option>
-	<option value="contact">Contact</option>
+	
 </select>
 
 <% if flash[:success] %>
 	<div class="alert alert-success"><%= flash[:success] %></div>
 <% end %>
+
+
 <div class="content container">
 	<%= yield %>
 </div>

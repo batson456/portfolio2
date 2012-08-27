@@ -22,5 +22,7 @@ class Post < ActiveRecord::Base
   def create_slug
     self.slug = self.title.parameterize
   end
+
+  scope :published, where("status = ? OR status = ?", 'featured', 'published')
   
 end
