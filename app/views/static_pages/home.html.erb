@@ -76,6 +76,7 @@
         <p>You know what you want to make, but you just don't quite know how to make it. That is where I come in. I will work with you on any project to design a clean and effective web design that you can be proud of, whethere it is a personal blog or professional business website.</p>
         <br>
         <%= image_tag 'bottom-shadow.png' %>
+        <hr class="spacer hidden-desktop">
     </div>
     <div class="span4">
         <%= image_tag('orange-code.png') %>
@@ -84,6 +85,7 @@
         <p>There is so much more to web development these days than a simple design. With my skills as a PHP and Ruby developer, I can make sure you have all the features you are looking for in your project, from a blog to a shopping cart, we can make it work.</p>
         <br>
         <%= image_tag 'bottom-shadow.png' %>
+        <hr class="spacer hidden-desktop">
     </div>
     <div class="span4">
         <%= image_tag('orange-web.png') %>
@@ -92,12 +94,18 @@
         <p>Everything is finished, you want to show your new website off to the world, and I can make sure that you get that wish. Whether you need hosting, or you just want me to help you set it up, I will be your guide to make sure you get your finished product seen.</p>
         <br>
         <%= image_tag 'bottom-shadow.png' %>
+        <hr class="spacer hidden-desktop">
     </div>
 
 </div>
 
 <br>
+</div>
+<div class="dark_callout hidden-phone">
+    <p>I will work with you from beginning to end to make sure you get the project of your dreams!</p>
+</div>
 <br>
+<div class="container">
 
 <!--/ Why Me? -->
 
@@ -105,77 +113,43 @@
     <div class="span12">
         <h4>
             Latest Projects 
-            <span class="pull-right">
-                <%= link_to 'Prev', '#', :id => 'go-prev' %>
-                <%= link_to 'Next', '#', :id => 'go-next' %>
-            </span>
         </h4>
     </div>
 </div>
 
 
-<ul id="slider1" class="thumbnails">
-        <li class="span4">
-            <%= image_tag('top-shadow.png') %>
-            <div class="image">
-                <a href="#" class="zoom">
-            <span class="roll"></span>
-            <%= image_tag('wallers.jpg') %>
-          </a>
-         </div>
-         <%= image_tag('bottom-shadow.png') %>
-        </li>
-        <li>
-            <%= image_tag('top-shadow.png') %>
-            <div class="image">
-                <a href="#" class="zoom">
-            <span class="roll"></span>
-            <%= image_tag('my-portfolio.jpg') %>
-          </a>
-         </div>
-         <%= image_tag('bottom-shadow.png') %>
-        </li>
-        <li>
-            <%= image_tag('top-shadow.png') %> 
-            <div class="image">
-                <a href="#" class="zoom">
-            <span class="roll"></span>
-            <%= image_tag('danette.jpg') %>
-          </a>
-         </div>
-         <%= image_tag('bottom-shadow.png') %>
-        </li>
-        <li>
-            <%= image_tag('top-shadow.png') %>
-            <div class="image">
-                <a href="#" class="zoom">
-            <span class="roll"></span>
-            <%= image_tag('wallers.jpg') %>
-          </a>
-         </div>
-         <%= image_tag('bottom-shadow.png') %>
-        </li>
-        <li>
-            <%= image_tag('top-shadow.png') %>
-            <div class="image">
-                <a href="#" class="zoom">
-            <span class="roll"></span>
-            <%= image_tag('my-portfolio.jpg') %>
-          </a>
-         </div>
-         <%= image_tag('bottom-shadow.png') %>
-        </li>
-        <li>
-            <%= image_tag('top-shadow.png') %> 
-            <div class="image">
-                <a href="#" class="zoom">
-            <span class="roll"></span>
-            <%= image_tag('danette.jpg') %>
-          </a>
-         </div>
-         <%= image_tag('bottom-shadow.png') %>
-        </li>
-</div>
+<ul class="thumbnails">
+    <li class="span4">
+        <%= image_tag('top-shadow.png') %>
+        <div class="image">
+            <a href="#" class="zoom">
+        <span class="roll"></span>
+        <%= image_tag('wallers.jpg') %>
+      </a>
+     </div>
+     <%= image_tag('bottom-shadow.png') %>
+    </li>
+    <li class="span4">
+        <%= image_tag('top-shadow.png') %>
+        <div class="image">
+            <a href="#" class="zoom">
+        <span class="roll"></span>
+        <%= image_tag('my-portfolio.jpg') %>
+      </a>
+     </div>
+     <%= image_tag('bottom-shadow.png') %>
+    </li>
+    <li class="span4">
+        <%= image_tag('top-shadow.png') %> 
+        <div class="image">
+            <a href="#" class="zoom">
+        <span class="roll"></span>
+        <%= image_tag('danette.jpg') %>
+      </a>
+     </div>
+     <%= image_tag('bottom-shadow.png') %>
+    </li>
+</ul>
         
 
 <br>
@@ -192,8 +166,9 @@
     </div>
     <div class="span6 hidden-phone">
         <h4>Testimonials
-            <span class="more-link pull-right">
-                
+            <span class="pull-right">
+                <%= link_to 'Prev', '#', :id => 'go-prev' %>
+                <%= link_to 'Next', '#', :id => 'go-next' %>
             </span>
         </h4>
     </div>
@@ -229,12 +204,30 @@
     </div>
 
     <div class="span6 hidden-phone">
-        <div class="hero-unit">
-            <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
-            </p>
-            <br>
-            <i class="pull-right">-- Danette Duprey</i>
+        <div id="testimonials">
+            <div class="well">
+                <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
+                </p>
+                <br>
+                <i class="pull-right">-- Danette Duprey</i>
+            </div>
+            
+            <!-- Slider not formatted yet
+            <div class="well">
+                <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
+                </p>
+                <br>
+                <i class="pull-right">-- Danette Duprey</i>
+            </div>
+            <div class="well">
+                <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
+                </p>
+                <br>
+                <i class="pull-right">-- Danette Duprey</i>
+            </div>
+            -->
         </div>
+        
     </div>
 
 </div>
