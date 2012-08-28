@@ -12,13 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.easing
 //= require bootstrap
 //= require scripts
+//= require jquery.bxSlider
 //= require rails.validations
-//= require hover.zoom
 //= require jquery.defaultvalue
-//= require viewbox_min
 //= require_directory ./tweet
 //= require ckeditor/init
 //= require_directory .
