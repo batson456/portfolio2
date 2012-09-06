@@ -1,7 +1,7 @@
 
 /***********************************************
 * Colors
-***********************************************/ 
+***********************************************/
 
 $darkGray:#868686;
 $green:#a7c84d;
@@ -17,7 +17,7 @@ $orange:#F15A23;
 
 /***********************************************
 * Defaults
-***********************************************/ 
+***********************************************/
 .hidden {
   display: none;
   visibility: hidden;
@@ -69,7 +69,6 @@ body{
 	color:$grayLight;
 	background:#f8f8f8;
 	font-family: "Rhomus", sans-serif;
-
 }
 
 a{
@@ -86,14 +85,8 @@ h4{
 	margin-bottom:20px;
 	border-bottom:1px solid $grayLight;
 }
-h5{
-	color:$grayLight;
-	font-size:22px;
-	line-height:1.5em;
-	font-weight:200;
-}
 p{
-	line-height:1.6em;
+	line-height:1.8em;
 }
 
 /***********************************************
@@ -131,7 +124,7 @@ p{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #bbb;
-	
+
 }
 #back-top a:hover {
 	color: #000;
@@ -171,7 +164,7 @@ p{
 	width:100%;
 	p{
 		font-size:1.4em;
-		line-height:80px; 
+		line-height:80px;
 		text-align:center;
 	}
 	height:80px;
@@ -188,20 +181,19 @@ p{
 }
 
 .arrow-down {
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-	
+
 	border-top: 20px solid #f00;
 }
 
 /***********************************************
 * Home Page Stylings
-***********************************************/ 
+***********************************************/
 
 .introduction{
-	background:transparent;
 	padding:20px;
 	text-align:center;
 	span{
@@ -245,7 +237,7 @@ p{
 .client{
 	font-style:italic;
 	font-size:10px;
-	
+
 }
 #who_am_i{
 	p{
@@ -256,10 +248,10 @@ p{
 	float:left;
 	color:$orange;
 	font-size:30px;;
-	line-height: 25px; 
-	padding-top: 4px; 
-	padding-right: 8px; 
-	padding-left: 3px; 
+	line-height: 25px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
 	font-family: Georgia;
 }
 .alert{
@@ -271,7 +263,6 @@ p{
 ***********************************************/
 
 .image{
-	line-height:0;
 	background: eggshell;
 	border: 1px solid white;
 	padding: 4px;
@@ -300,6 +291,12 @@ p{
 .post{
 	overflow:hidden;
 	margin-bottom:60px;
+    h5{
+        color:$grayLight;
+        font-size:22px;
+        line-height:1.5em;
+        font-weight:200;
+    }
 }
 .post_info{
 	border-top:1px solid $grayLighter;
@@ -355,6 +352,7 @@ p{
 		}
 	}
 }
+
 #navbar{
 	height:100px;
 	border-bottom:1px solid $grayLighter;
@@ -363,8 +361,8 @@ p{
    	-moz-box-shadow: 0 5px 2px -2px gray;
     box-shadow: 0 5px 2px -2px gray;
 }
+
 #logo{
-	
 	height:80px;
 	padding-top:20px;
 	a{
@@ -401,37 +399,30 @@ p{
 		margin-top:-6px;
 		width:125px;
 		border-top:6px solid $orange;
-		a{
-			color:$gray;
-		}
-		a:hover{
+		a:hover,a{
 			text-decoration:underline;
 			color:$orange;
 		}
 	}
 	.active:after, li:hover:after{
-		width: 0; 
+		width: 0;
 		height: 0;
 		top:-1px;
-		left:55.5px; 
+		left:55.5px;
 		border-left: 7px solid transparent;
 		border-right: 7px solid transparent;
 		content:'';
 		border-top: 7px solid $orange;
 		position:absolute;
 	}
-	
+
 }
 
 /***********************************************
 * Footer
-***********************************************/ 
+***********************************************/
 
 #footer{
-	margin-left: -20px;
-	margin-right: -20px;
-	padding-left: 40px;
-	padding-right: 40px;
 	background:#3A3A3A;
 	color:$grayLight;
 	padding:35px 0 30px;
@@ -443,15 +434,10 @@ p{
 	textarea{
 		height:60px;
 	}
-
-	p{
-		line-height:1.8em;
-	}
 	.tweet_list{
 		list-style:none;
 		margin:0px;
 		padding:0px;
-    	line-height:1.5em;
 	    li{
 	    	border-bottom:1px solid $grayLight;
 	    	margin-bottom:20px;
@@ -470,11 +456,13 @@ p{
 	}
 
 }
-#footer_bottom{
+#footer,#footer_bottom{
 	margin-left: -20px;
 	margin-right: -20px;
 	padding-left: 40px;
 	padding-right: 40px;
+}
+#footer_bottom{
 	background:#303030;
 	padding-top:12px;
 	a{
@@ -494,7 +482,7 @@ p{
 
 /***********************************************
 * Jquery Slider
-***********************************************/ 
+***********************************************/
 #slider{
 	margin-bottom:60px;
 }
@@ -599,7 +587,7 @@ img.bg{
 
 /***********************************************
 * Contact Page
-***********************************************/ 
+***********************************************/
 #contact_info{
 	margin-top:40px;
 	p{
@@ -626,11 +614,11 @@ img.bg{
 
 /***********************************************
 * Error Messages in contact form
-***********************************************/ 
+***********************************************/
 
-field_with_errors{
+.field_with_errors{
 	display:inline;
-} 
+}
 
 .message{
 	color:red;
@@ -638,9 +626,9 @@ field_with_errors{
 
 /***********************************************
 * Viewbox
-***********************************************/ 
+***********************************************/
 .thumbdiv {
-	float:left; 
+	float:left;
 	position:relative;
 	text-align:center;
 }
@@ -660,28 +648,28 @@ field_with_errors{
 #viewbox {
 	position:fixed;
 	height:100%;
-	width:100%;   
+	width:100%;
 	top:0;
 	left:0;
 	background:#383739;
-	z-index:2190; 
+	z-index:2190;
 	overflow:auto;
-} 
+}
 .vb_wrap {
-	position:absolute; 
+	position:absolute;
 	padding:10px;
 	height:20px;
-	width:20px; 
+	width:20px;
 	background-image:url(ViewBox_bg.png);
 	background-color:#0f0e0e;
-	overflow:visible; 
+	overflow:visible;
 	z-index:2200;
 	margin:0 auto;
-	top:0; 
+	top:0;
 	left:0;
 	border-radius:10px;
 	box-shadow: 4px 4px 7px #000;
-} 
+}
 .vb_wrap .content {
  	position:relative;
 	overflow:visible;
@@ -694,9 +682,9 @@ field_with_errors{
 	left:1px;
 	font-size:0.9em;
 	color:#0c0c0c;
-} 
+}
 .vb_wrap .close {
-	position:absolute; 
+	position:absolute;
 	top:-40px;
 	right:-7px;
 	background:url(viewbox_close.png) top left no-repeat;
@@ -708,7 +696,7 @@ field_with_errors{
 	right:7px;
 }
 .vb_wrap .next {
-	position:absolute;   
+	position:absolute;
 	right:-60px;
 	background:url(ViewBox_next.png) top left no-repeat;
 	height:50px;
@@ -716,7 +704,7 @@ field_with_errors{
 	z-index:2190;
 }
 .vb_wrap .prev {
-	position:absolute;   
+	position:absolute;
 	left:-59px;
 	background:url(ViewBox_prev.png) top right no-repeat;
 	height:50px;
@@ -740,14 +728,14 @@ field_with_errors{
 .vb_wrap h1 {
 	margin:5px 0px 8px;
 	padding-bottom:3px;
-	letter-spacing:1.3px; 
+	letter-spacing:1.3px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:0.9em;
 	color:#cdcdcd;
 	border-bottom:solid 1px #7e7e7e;
-	
+
 }
-.vb_wrap p { 
+.vb_wrap p {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:0.8em;
 	text-align:justify;
@@ -759,7 +747,7 @@ field_with_errors{
 	border-top:solid 1px #121212;
 	bottom:0; left:0;
 	padding:5px;
-	width:99%; 
+	width:99%;
 	z-index:2110;
 }
 * html .vb_wrap .text {
@@ -770,20 +758,20 @@ field_with_errors{
 	z-index:2220;
 }
 .vb_wrap .text h1 {
-	margin:2px; 
+	margin:2px;
 	padding:1px;
 	color:#acacac;
 	z-index:2230;
 }
 .vb_wrap .text .description {
 	position:relative;
-	bottom:0px; 
+	bottom:0px;
 	left:0px;
 	padding:2px 2px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:0.9em;
 	z-index:2260;
-	color:#c1c1c1; 
+	color:#c1c1c1;
 }
 
 /***********************************************
@@ -794,7 +782,7 @@ field_with_errors{
 /* @override http://localhost/bxslider_v3_plugin/css/styles.css */
 
 /*
- * To change the color scheme of slider change each 
+ * To change the color scheme of slider change each
  * background property for each of the five styles below
  */
 
