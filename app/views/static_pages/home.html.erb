@@ -114,6 +114,9 @@
     <div class="span12">
         <h4>
             Latest Projects
+            <span class="more-link pull-right">
+                <%= link_to 'View All', portfolio_path %>
+            </span>
         </h4>
     </div>
 </div>
@@ -127,9 +130,9 @@
         <span class="roll"></span>
         <%= image_tag('wallers.jpg') %>
       </a>
+      <p>Wallers Family Website</p>
      </div>
      <%= image_tag('bottom-shadow.png') %>
-     Wallers Family Website (WIP)
     </li>
     <li class="span4">
         <%= image_tag('top-shadow.png') %>
@@ -138,9 +141,9 @@
         <span class="roll"></span>
         <%= image_tag('katy_aftermath.jpg') %>
       </a>
+      <p>Katy Milstead's Blog</p>
      </div>
      <%= image_tag('bottom-shadow.png') %>
-     Katy Milstead's Blog
     </li>
     <li class="span4">
         <%= image_tag('top-shadow.png') %>
@@ -149,9 +152,9 @@
         <span class="roll"></span>
         <%= image_tag('danette.jpg') %>
       </a>
+      <p>Danette's Photography (No Longer Online)</p>
      </div>
      <%= image_tag('bottom-shadow.png') %>
-     Danette's Photography
     </li>
 
 </ul>
@@ -190,6 +193,8 @@
 
                     <% if post.image? %>
 
+                    <h6><%= post.title %></h6>
+
                     <%= image_tag('top-shadow.png') %>
                         <div class="image">
 
@@ -198,8 +203,6 @@
                         </div>
                     <%= image_tag('bottom-shadow.png') %>
                     <% end %>
-
-                    <h6><%= post.title %></h6>
 
                     <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
                     <%= link_to 'Read More', post, :class => "button-small pull-right" %>
@@ -218,7 +221,11 @@
                 <br>
                 <i class="pull-right">-- Danette Duprey</i>
             </div>
-
+            <div class="well">
+                <p>"OMG, I'm in love!"</p>
+                <br>
+                <i class="pull-right">-- Katy Milstead</i>
+            </div>
             <!-- Slider not formatted yet
             <div class="well">
                 <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
