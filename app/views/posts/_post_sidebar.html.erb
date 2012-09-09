@@ -1,0 +1,15 @@
+<h5>Recent Posts</h5>
+<ul class="bordered_list">
+	<% @sidebar.each do |post| %>
+		<li><%= link_to post.title, post %></li>
+	<% end %>
+</ul>
+
+<br>
+
+<h5>Categories</h5>
+<ul class="bordered_list">
+	<% @categories.each do |cat| %>
+	<li><%= link_to cat.category, category_path(cat.id) %></li>
+	<% end %>
+</ul>

@@ -12,21 +12,20 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
 
 <a name="top"></a>
 <div id="navbar">
-	<div class="container">
 		<div class="row">
-			<div id="logo" class="span3">
+			<div id="logo" class="three columns">
 				<a href="#"><span class="orange">Bryce</span>Batson</a>
 				<br>
 				<span class="subtext">Web Development Connoisseur</span>
 			</div>
-			<div class="span9 hidden-phone">
-				<ul class="navigation pull-right">
+			<div class="nine columns hide-for-small">
+				<ul class="navigation">
 					<%= nav_link 'Home', root_path %>
 					<%= nav_link 'Portfolio', portfolio_path %>
 					<%= nav_link 'Blog', blog_path %>
@@ -35,12 +34,22 @@
 				</ul>
 			</div>
 		</div>
-	</div>
 </div>
 
-<select name="menu" id="menu" class="visible-phone">
-	
-</select>
+<div class="eight columns show-for-small">
+	<ul class="nav-bar">
+		<li class="has-flyout">
+			<a href="#">Menu</a>
+			<a href="#" class="flyout-toggle"><span></span></a>
+			<ul class="flyout">
+				<li><%= link_to 'Home', root_path %></li>
+				<li><%= link_to 'About', about_path %></li>
+				<li><%= link_to 'Contact', contact_path %></li>
+				<li><%= link_to 'Portfolio', portfolio_path %></li>
+			</ul>
+		</li>
+	</ul>
+</div>
 
 <% if flash[:success] %>
 	<div class="alert alert-success"><%= flash[:success] %></div>
@@ -56,15 +65,13 @@
 </p>
 
 <div id="footer">
-	<div class="container">
 		<div class="row">
-			<div class="span4">
+			<div class="four columns">
 				<h3>Contact</h3>
 				<%= render :template => 'contact/new' %>
 			</div><!-- / Contact-form -->
-			<hr class="visible-phone">
 
-			<div class="span4 hidden-phone">
+			<div class="four columns hide-for-small">
 				<h3>Twitter</h3>
 				<div id="feed"></div>
 				<script>
@@ -80,15 +87,14 @@
 				</script>
 			</div><!-- /Twitter -->
 
-			<div class="span4">
+			<div class="four columns">
 				<h3>Who am I?</h3>
-				<%= image_tag 'me.png', :class => 'me_image pull-left' %>
+				<%= image_tag 'me.png', :class => 'me_image' %>
 				<p class="who_am_i">Hey there! My name is Bryce Batson. I am a freelance web developer living in Plattsburgh New York. I have two beautiful children and a lovely fiance.</p>
 				<p>I have been developing websites for almost 3 years and have worked in Ruby (my favorite), php, and almost all front end languages (HTML,CSS,Javascript). I absolutely love what I do, and I hope to prove it to you! Don't waste another moment, drop me a line. I look forward to working with you!</p>
 				<p>Want to know more about me? Click <%= link_to "here", about_path %></p>
 			</div><!-- /Introduction -->
 		</div>
-	</div>
 </div>
 <div id="footer_bottom">
 	<div class="container">

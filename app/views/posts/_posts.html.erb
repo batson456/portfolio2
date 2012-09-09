@@ -3,14 +3,14 @@
 	  <h5><%= post.title %></h5>
 	  <div class="post_info">
 	  	
-	  	<i>Posted</i>
+	  	Posted
 
 	  	<span class="date">
 	    	 <%= time_ago_in_words post.created_at %> ago
 	    </span>
 
 	    <% unless post.categories.empty? %>
-	    	<i>in</i>
+	    	in
 
 		    <ul>
 			    <% post.categories.each do |category| %>

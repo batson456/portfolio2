@@ -80,20 +80,12 @@ $(document).ready(function(){
 
 });
 
-// BX_Slider calls
+// Flex Slider Calls
 $(function(){
-  var slider = $('#testimonials').bxSlider({
-    controls: false,
-  });
-
-  $('#go-prev').click(function(){
-    slider.goToPreviousSlide();
-    return false;
-  });
-
-  $('#go-next').click(function(){
-    slider.goToNextSlide();
-    return false;
+  $('#testimonials').flexslider({
+  	animation: "slide",
+  	controlNav: false,
+  	controlsContainer: ".slider-buttons", 
   });
 });
 

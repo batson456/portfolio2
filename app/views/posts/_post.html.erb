@@ -1,20 +1,22 @@
-<div class="span8">
+<div class="eight columns">
   <div class="post">
     <h5><%= @post.title %></h5>
     <div class="post_info">
       
-      <i>Posted</i>
+      Posted
 
       <span class="date">
          <%= time_ago_in_words @post.created_at %> ago
       </span>
 
       <% unless @post.categories.empty? %>
-        <i>in</i>
+        in
 
         <ul>
           <% @post.categories.each do |category| %>
+            <% unless category.category.empty? %>
             <li><%= link_to category.category, category_path(category.id) %></li>
+            <% end %>
           <% end %>
         </ul>
       <% end %>
