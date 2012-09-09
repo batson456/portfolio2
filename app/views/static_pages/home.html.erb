@@ -1,105 +1,104 @@
-<div class="alert span8 offset2">
-    <button class="close" data-dismiss="alert">x</button>
-    Please be patient with me, this site is still under construction. Please feel free to look around but there may be some sections that don't quite work yet and links that don't go anywhere! Please keep checking back! <i>-- Bryce Batson</i>
-</div>
+
 
 <div class="row">
-  <div class="span12">
+  <div class="twelve columns">
       <div class="introduction">
         <span>Welcome! My name is <span class="orange">Bryce Batson</span>. I am a freelance web developer living in Plattsburgh New York. Please take a look around, don't be shy. If you like what you see, <%= link_to 'let me know', contact_path %>.</span>
       </div>
   </div>
 </div>
 
-<hr class="spacer">
-<!--
-<div id="slider">
-    <div class="rotator hidden-phone">
-        <ul id="rotmenu">
-            <li>
-                <a href="rot1">Danette's Photography</a>
-                <div style="display:none;">
-                    <div class="info_image">danette.jpg</div>
-                    <div class="info_description">
-                        I made this site for Danette Duprey, a photographer living in Chazy, New York. It features a custom ajax driven admin panel and all the tools she needs to keep it running. Design courtesy of ThemeCatcher at <a href="http://www.themeforest.net">ThemeForest</a>
-                        <br>
-                        <a href="#" class="more">Visit</a>
+<div class="row hide-for-small">
+    <div id="slider" class="twelve columns drop-shadow lifted">
+        <div class="rotator">
+            <ul id="rotmenu">
+                <li>
+                    <a href="rot1">Katy Milstead's Blog</a>
+                    <div style="display:none;">
+                        <div class="info_image">katy_aftermath.jpg</div>
+                        <div class="info_description">
+                            A personal blog for a good friend of mine. The theme was an interesting one, but I think we did a real good job with it. <a href="http://www.katyaftermath.com" class="more">Visit</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-
-            <li>
-                <a href="rot2">The Wallers</a>
-                <div style="display:none;">
-                    <div class="info_image">wallers.jpg</div>
-                    <div class="info_description">
-                        Created a family website for The Waller family including event calendar and personalized blogs for every member of the family.
-                        <br>
-                        <a href="#" class="more">Visit</a>
+                </li>
+                <li>
+                    <a href="rot2">Danette's Photography</a>
+                    <div style="display:none;">
+                        <div class="info_image">danette.jpg</div>
+                        <div class="info_description">
+                            I made this site for Danette Duprey, a photographer living in Chazy, New York. It features a custom ajax driven admin panel and all the tools she needs to keep it running. Design courtesy of ThemeCatcher at <a href="http://www.themeforest.net">ThemeForest</a>
+                            <br>
+                            <a href="#" class="more">Visit</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li>
-                <a href="rot3">My Portfolio</a>
-                <div style="display:none;">
-                    <div class="info_image">my-portfolio.jpg</div>
-                    <div class="info_description">
-                        This was my first portfolio design. I scrapped it and started again with this one. Much better isn't it?
-                        <br>
+                <li>
+                    <a href="rot3">The Wallers</a>
+                    <div style="display:none;">
+                        <div class="info_image">wallers.jpg</div>
+                        <div class="info_description">
+                            Created a family website for The Waller family including event calendar and personalized blogs for every member of the family.
+                            <br>
+                            <a href="#" class="more">Visit</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
 
-        <div id="rot1">
-            <img src="" width="800" height="300" class="bg" alt=""/>
-            <div class="heading">
-                <h1></h1>
-            </div>
-            <div class="description">
-                <p></p>
+                <li>
+                    <a href="rot4">My Portfolio</a>
+                    <div style="display:none;">
+                        <div class="info_image">my-portfolio.jpg</div>
+                        <div class="info_description">
+                            This was my first portfolio design. I scrapped it and started again with this one. Much better isn't it?
+                            <br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="rot1">
+                <img src="" width="800" height="300" class="bg" alt=""/>
+                <div class="heading">
+                    <h1></h1>
+                </div>
+                <div class="description">
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
--->
-
 <!-- Why Me?-->
 <div id="why-me" class="row">
 
-    <div class="span4">
+    <div class="four columns reason">
         <%= image_tag('orange-design.png') %>
         <h2>Design</h2>
         <hr>
-        <p>You know what you want to make, but you just don't quite know how to make it. That is where I come in. I will work with you on any project to design a clean and effective web design that you can be proud of, whethere it is a personal blog or professional business website.</p>
+        <p>You know what you want to make, but you just don't quite know how to make it. I will work with you on any project to design a clean and effective web design that you can be proud of, whethere it is a personal blog or professional business website.</p>
         <br>
         <%= image_tag 'bottom-shadow.png' %>
-        <hr class="spacer hidden-desktop">
     </div>
-    <div class="span4">
+    <div class="four columns reason">
         <%= image_tag('orange-code.png') %>
         <h2>Develop</h2>
         <hr>
         <p>There is so much more to web development these days than a simple design. With my skills as a PHP and Ruby developer, I can make sure you have all the features you are looking for in your project, from a blog to a shopping cart, we can make it work.</p>
         <br>
         <%= image_tag 'bottom-shadow.png' %>
-        <hr class="spacer hidden-desktop">
     </div>
-    <div class="span4">
+    <div class="four columns reason">
         <%= image_tag('orange-web.png') %>
         <h2>Deploy</h2>
         <hr>
         <p>Everything is finished, you want to show your new website off to the world, and I can make sure that you get that wish. Whether you need hosting, or you just want me to help you set it up, I will be your guide to make sure you get your finished product seen.</p>
         <br>
         <%= image_tag 'bottom-shadow.png' %>
-        <hr class="spacer hidden-desktop">
     </div>
 
-</div>
-
-<hr class="spacer"> <!--/ Why Me? -->
+</div> <!-- /Why Me? -->
 
 </div> <!-- / Container -->
 
@@ -111,10 +110,10 @@
 <div class="container">
 
 <div class="row">
-    <div class="span12">
+    <div class="twelve columns">
         <h4>
             Latest Projects
-            <span class="more-link pull-right">
+            <span class="more-link">
                 <%= link_to 'View All', portfolio_path %>
             </span>
         </h4>
@@ -122,8 +121,8 @@
 </div>
 
 
-<ul class="thumbnails">
-    <li class="span4">
+<ul class="thumbnails row">
+    <li class="four columns">
         <%= image_tag('top-shadow.png') %>
         <div class="image">
             <a href="#" class="zoom">
@@ -134,7 +133,7 @@
      </div>
      <%= image_tag('bottom-shadow.png') %>
     </li>
-    <li class="span4">
+    <li class="four columns">
         <%= image_tag('top-shadow.png') %>
         <div class="image">
             <a href="http://www.katyaftermath.com" class="zoom">
@@ -145,7 +144,7 @@
      </div>
      <%= image_tag('bottom-shadow.png') %>
     </li>
-    <li class="span4">
+    <li class="four columns">
         <%= image_tag('top-shadow.png') %>
         <div class="image">
             <a href="#" class="zoom">
@@ -165,84 +164,71 @@
 <br>
 
 <div class="row">
-    <div class="span6">
+    <div class="six columns">
         <h4>Recent Posts
-            <span class="more-link pull-right">
+            <span class="more-link">
                 <%= link_to 'View All', posts_path %>
             </span>
         </h4>
+        <div class="twelve columns">
+            <div id="recent_posts" class="row">
+                <% @posts.each do |post| %>
+
+                    <div class="six columns">
+
+                        <% if post.image? %>
+
+                        <h6><%= post.title %></h6>
+
+                        <%= image_tag('top-shadow.png') %>
+                            <div class="image">
+
+                                    <%= image_tag post.image.url(:thumb) %>
+
+                            </div>
+                        <%= image_tag('bottom-shadow.png') %>
+                        <% end %>
+
+                        <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
+                        <%= link_to 'Read More', post, :class => "button-small blog-button" %>
+                    </div>
+
+                <% end %>
+
+            </div>
+        </div>
     </div>
-    <div class="span6 hidden-phone">
+
+
+    <div class="six columns">
         <h4>Testimonials
-            <span class="pull-right">
-                <%= link_to 'Prev', '#', :id => 'go-prev' %>
-                <%= link_to 'Next', '#', :id => 'go-next' %>
+            <span class="slider-buttons">
+               
             </span>
         </h4>
+
+        <div id="testimonials" class="twelve columns">
+ 
+            <ul class="slides">
+                <li>
+                    <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
+                    </p>
+                    <br>
+                    <i>-- Danette Duprey</i>
+                </li>
+                <li>
+                    <p>"OMG, I'm in love!"</p>
+                    <br>
+                    <i>-- Katy Milstead</i>
+                </li>
+            </ul>
+
+        </div>
+
     </div>
 </div>
 
 
-
-<div class="row">
-    <div class="span6">
-        <div id="recent_posts" class="row">
-            <% @posts.each do |post| %>
-
-                <div class="span3">
-
-                    <% if post.image? %>
-
-                    <h6><%= post.title %></h6>
-
-                    <%= image_tag('top-shadow.png') %>
-                        <div class="image">
-
-                                <%= image_tag post.image.url(:thumb) %>
-
-                        </div>
-                    <%= image_tag('bottom-shadow.png') %>
-                    <% end %>
-
-                    <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
-                    <%= link_to 'Read More', post, :class => "button-small pull-right" %>
-                </div>
-
-            <% end %>
-
-        </div>
-    </div>
-
-    <div class="span6 hidden-phone">
-        <div id="testimonials">
-            <div class="well">
-                <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
-                </p>
-                <br>
-                <i class="pull-right">-- Danette Duprey</i>
-            </div>
-            <div class="well">
-                <p>"OMG, I'm in love!"</p>
-                <br>
-                <i class="pull-right">-- Katy Milstead</i>
-            </div>
-            <!-- Slider not formatted yet
-            <div class="well">
-                <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
-                </p>
-                <br>
-                <i class="pull-right">-- Danette Duprey</i>
-            </div>
-            <div class="well">
-                <p>"Bryce created a website that just plain works. It's crisp, clean, beautiful, and everything I hoped it would be and more"
-                </p>
-                <br>
-                <i class="pull-right">-- Danette Duprey</i>
-            </div>
-            -->
-        </div>
-
-    </div>
 
 </div>
 

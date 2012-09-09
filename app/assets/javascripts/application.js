@@ -12,9 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require foundation
+//= require foundation/app
 //= require scripts
-//= require jquery.bxSlider
+//= require jquery.flexslider-min
 //= require rails.validations
 //= require jquery.defaultvalue
 //= require_directory ./tweet
