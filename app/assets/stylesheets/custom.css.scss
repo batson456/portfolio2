@@ -297,7 +297,7 @@ legend small {
   position:relative;
   float:left;
   width:40%;
-  padding:1em;
+  padding:0;
   margin:2em 10px 4em;
   background:#fff;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -369,6 +369,7 @@ legend small {
 		line-height:1.3em;
 	}
 }
+
 #testimonial{
 	p{
 		font-size:1.1em;
@@ -451,17 +452,13 @@ legend small {
 .image{
 	background: eggshell;
 	border: 1px solid #ccc;
-	padding:8px;
+	padding:3px;
 	border-radius:6px;
 	img{
 		border:1px solid #D8D8D8;
 		background:url('loader.gif') no-repeat center center;
 		width:100%;
 	}
-}
-.blog{
-	padding:2px;
-	margin:5px 0 5px 0;
 }
 
 .zoom{
