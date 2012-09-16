@@ -70,6 +70,10 @@
     </div>
 </div>
 
+<div class="dark_callout hidden-phone">
+    <p>I will work with you from beginning to end to make sure you get the project of your dreams!</p>
+</div>
+
 <!-- Why Me?-->
 <div id="why-me" class="row">
 
@@ -100,14 +104,6 @@
 
 </div> <!-- /Why Me? -->
 
-</div> <!-- / Container -->
-
-    <div class="dark_callout hidden-phone">
-        <p>I will work with you from beginning to end to make sure you get the project of your dreams!</p>
-    </div>
-<br>
-
-<div class="container">
 
 <div class="row">
     <div class="twelve columns">
@@ -160,7 +156,7 @@
 
 
 <br>
-<hr>
+<hr class="row">
 <br>
 
 <div class="row">
@@ -174,25 +170,27 @@
             <div id="recent_posts" class="row">
                 <% @posts.each do |post| %>
 
-                    <div class="six columns">
+                    <div class="twelve columns">
 
                         <% if post.image? %>
 
-                        <h6><%= post.title %></h6>
 
-                        <%= image_tag('top-shadow.png') %>
-                            <div class="image">
-
-                                    <%= image_tag post.image.url(:thumb) %>
-
+                            <div class="blog image two columns">
+                                    <%= image_tag post.image.url(:small, :style => 'float:left;') %>
                             </div>
-                        <%= image_tag('bottom-shadow.png') %>
+
                         <% end %>
 
-                        <p><%= raw HTML_Truncator.truncate(post.content,50) %></p>
-                        <%= link_to 'Read More', post, :class => "button-small blog-button" %>
+                        <div class="ten columns">
+                            <p>
+                                <%= link_to post.title, post %>
+                            </p>
+                            <p>
+                                <%= post.created_at.strftime("%b, %Y") %>
+                            </p>
+                        </div>
                     </div>
-
+                    <hr>
                 <% end %>
 
             </div>

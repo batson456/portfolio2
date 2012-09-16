@@ -11,6 +11,7 @@ gem "meta_search",    '>= 1.1.0.pre'
 gem "paperclip", "~> 3.0"
 gem "ckeditor", :git => 'https://github.com/batson456/ckeditor'
 gem "html_truncator", "~>0.2"
+gem 'sass-rails',   '~> 3.2.3'
 
 group :development, :test do
 	gem 'rspec-rails'
@@ -20,7 +21,6 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   
   # Add these gems

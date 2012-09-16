@@ -2,7 +2,7 @@ class Post < ActiveRecord::Base
 	before_create :create_slug
   attr_accessible :content, :title,:status, :category_ids, :image
 
-  has_attached_file :image, :styles => { :medium => "600x200#", :thumb => "300x100#" }
+  has_attached_file :image, :styles => { :medium => "600x200#", :thumb => "300x100#",:small => "75x75#" }
 
   validates :title, :content, :image, :presence => true
 

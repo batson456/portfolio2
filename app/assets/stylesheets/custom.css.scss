@@ -267,6 +267,12 @@ ul li{
 	color:$orange;
 	line-height:2em;
 }
+#recent_posts{
+	p{
+		margin-top:10px;
+		line-height:1.2em;
+	}
+}
 .client{
 	font-style:italic;
 	font-size:10px;
@@ -291,6 +297,7 @@ ul li{
 	text-align:center;
 }
 
+
 /***********************************************
 * Images
 ***********************************************/
@@ -309,14 +316,18 @@ ul li{
 }
 .image{
 	background: eggshell;
-	border: 1px solid white;
-	padding: 8px 8px 0 8px;
-	outline: 1px solid #ccc;
+	border: 1px solid #ccc;
+	padding:8px;
+	border-radius:6px;
 	img{
 		border:1px solid #D8D8D8;
 		background:url('loader.gif') no-repeat center center;
 		width:100%;
 	}
+}
+.blog{
+	padding:4px;
+	margin:5px 0 5px 0;
 }
 
 .zoom{
