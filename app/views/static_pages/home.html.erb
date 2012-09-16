@@ -171,14 +171,15 @@
 
                         <% if post.image? %>
 
-
-                            <div class="blog image two columns">
+                        <div class="mobile-one three columns">
+                            <div class="blog image">
                                     <%= image_tag post.image.url(:small, :style => 'float:left;') %>
                             </div>
+                        </div>
 
                         <% end %>
 
-                        <div class="ten columns">
+                        <div class="nine mobile-three columns">
                             <p>
                                 <%= link_to post.title, post %>
                             </p>
