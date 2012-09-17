@@ -178,7 +178,7 @@
 
                         <div class="nine mobile-three columns">
                             <p>
-                                <%= link_to post.title, post %>
+                                <%= link_to HTML_Truncator.truncate(post.title,8), post %>
                             </p>
                             <p>
                             <%= post.created_at.strftime("%b, %Y") %>

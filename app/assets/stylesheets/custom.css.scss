@@ -248,27 +248,6 @@ legend small {
 * Shadows and CSS tricks
 ***********************************************/
 
-.image_shadow{
-	margin:0;
-	padding:0;
-	width:100%;
-	display:block;
-}
-
-.dark_callout{
-	background:$darkGray url('callout-shadow.png') top center no-repeat;
-	width:100%;
-	p{
-		font-size:1.4em;
-		line-height:80px;
-		text-align:center;
-	}
-	height:80px;
-	left:0;
-	color:white;
-	margin:10px 0 50px 0;
-}
-
 .rotate {
   -webkit-transform: rotate(-6deg);  /* Safari 3.1+, Chrome */
      -moz-transform: rotate(-6deg);  /* Firefox 3.5-15 */
@@ -650,6 +629,7 @@ legend small {
 #footer_bottom{
 	background:#303030;
 	padding-top:12px;
+	padding-bottom:12px;
 	a{
 		padding-left:10px;
 		padding-right:10px;
@@ -676,15 +656,7 @@ legend small {
 .slider-buttons{
 	float:right;
 }
-#slider_bg{
-	position:absolute;
-	left:-22.5%;
-	z-index:-9999;
-	text-align:center;
-	width:145%;
-	bottom:-18%;
-	height:260px;
-}
+
 .rotator{
 	img{
 		width:100%;
@@ -770,7 +742,6 @@ img.bg{
     left:0px;
 }
 .rotator{
-    background-color:$grayLight;
     margin:0 auto;
     height:400px;
     position:relative;
